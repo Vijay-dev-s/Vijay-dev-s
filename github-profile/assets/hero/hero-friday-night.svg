@@ -1,0 +1,27 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  <rect width="1200" height="300" fill="#0a0700"/>
+  
+  
+  <defs>
+    <linearGradient id="grad-friday-night" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a5906"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <radialGradient id="glow-friday-night" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(234,179,8,0.55)" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="rgba(234,179,8,0.55)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-friday-night"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <polygon points="700,0 1200,0 1200,300 900,300" fill="rgba(122,89,6,0.14)"/>
+  <circle cx="1000" cy="80" r="150" fill="url(#glow-friday-night)" filter="url(#blur-friday-night)"/>
+  <polygon points="940,0 860,130 980,130 860,300 1080,110 990,110" fill="url(#grad-friday-night)" fill-opacity="0.9"/>
+  <polygon points="940,0 860,130 980,130 860,300 1080,110 990,110" fill="none" stroke="#0a0700" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="60" y="90" font-family="Georgia, 'Cinzel Decorative', serif" font-size="44" font-weight="700" fill="#f6ecc8" transform="rotate(-2 60 90)">Vijay S</text>
+  <text x="60" y="122" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#eab308" letter-spacing="3">BACKEND ENGINEER</text>
+  <rect x="60" y="150" width="380" height="2" fill="url(#grad-friday-night)"/>
+  <text x="60" y="185" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="14" fill="#f6ecc8" opacity="0.75">"There is no problem that cannot be solved with sufficient force."</text>
+  <text x="60" y="255" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#7a5906" font-weight="700" letter-spacing="1">◆ GOLD · NIGHT</text>
+  
+  <rect x="1" y="1" width="1198" height="298" fill="none" stroke="#7a5906" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>
+</svg>
