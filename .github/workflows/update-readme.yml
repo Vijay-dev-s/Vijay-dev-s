@@ -1,0 +1,48 @@
+name: Update profile README (theme rotation)
+
+# Runs on a schedule so the README reflects the current IST day/night theme,
+# plus can always be triggered manually from the Actions tab.
+#
+# Cron below fires every 30 minutes. That's frequent enough to catch the
+# 06:00 and 18:00 IST day/night boundaries and the midnight weekday change
+# within half an hour, without spamming commits. Adjust freely — see
+# "Changing the schedule" in the root README.
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'config/themes.json'
+      - 'scripts/**'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate current-theme README
+        run: node scripts/generate.js --target=github
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "theme-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add github-profile/README.md github-profile/assets/hero/*.svg assets/hero/*.svg
+          if git diff --cached --quiet; then
+            echo "No visual change — nothing to commit."
+          else
+            git commit -m "chore: rotate profile theme [skip ci]"
+            git push
+          fi

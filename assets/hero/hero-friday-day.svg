@@ -1,0 +1,27 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  <rect width="1200" height="300" fill="#1a1204"/>
+  
+  
+  <defs>
+    <linearGradient id="grad-friday-day" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9a30d"/>
+      <stop offset="100%" stop-color="#ffd54a"/>
+    </linearGradient>
+    <radialGradient id="glow-friday-day" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(217,163,13,0.45)" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="rgba(217,163,13,0.45)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-friday-day"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <polygon points="700,0 1200,0 1200,300 900,300" fill="rgba(217,163,13,0.09)"/>
+  <circle cx="1000" cy="80" r="150" fill="url(#glow-friday-day)" filter="url(#blur-friday-day)"/>
+  <polygon points="940,0 860,130 980,130 860,300 1080,110 990,110" fill="url(#grad-friday-day)" fill-opacity="0.9"/>
+  <polygon points="940,0 860,130 980,130 860,300 1080,110 990,110" fill="none" stroke="#1a1204" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="60" y="90" font-family="Georgia, 'Cinzel Decorative', serif" font-size="44" font-weight="700" fill="#fdf7e6" transform="rotate(-2 60 90)">Vijay S</text>
+  <text x="60" y="122" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#ffd54a" letter-spacing="3">BACKEND ENGINEER</text>
+  <rect x="60" y="150" width="380" height="2" fill="url(#grad-friday-day)"/>
+  <text x="60" y="185" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="14" fill="#fdf7e6" opacity="0.75">"There is no problem that cannot be solved with sufficient force."</text>
+  <text x="60" y="255" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#d9a30d" font-weight="700" letter-spacing="1">◆ GOLD · DAY</text>
+  
+  <rect x="1" y="1" width="1198" height="298" fill="none" stroke="#d9a30d" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>
+</svg>
