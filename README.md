@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="assets/hero/hero-friday-day.svg" width="100%" alt="Vijay S — Gold day theme"/>
+<img src="assets/hero/hero-friday-night.svg" width="100%" alt="Vijay S — Gold night theme"/>
 
 </div>
 
 <div align="center">
 
-### 🟡 Gold · Day Edition
+### 🟡 Gold · Night Edition
 
 *"There is no problem that cannot be solved with sufficient force."*
 
@@ -40,16 +40,16 @@ News feed frontend with Laravel Blade serving 1000+ daily readers. Full-stack de
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-visit-d9a30d?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Vijay-dev-s-d9a30d?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
-[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-d9a30d?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-d9a30d?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
-[![Email](https://img.shields.io/badge/Email-contact-d9a30d?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-visit-7a5906?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Vijay--dev--s-7a5906?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
+[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-7a5906?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-7a5906?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
+[![Email](https://img.shields.io/badge/Email-contact-7a5906?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
 
 </div>
 
 <div align="center">
 
-<sub>Vijay S · Full Stack Developer · <strong>Gold</strong> (day) · auto-generated 2026-08-28 12:19 UTC via GitHub Actions scheduled workflow</sub>
+<sub>Vijay S · Full Stack Developer · <strong>Gold</strong> (night) · auto-generated 2026-08-28 12:44 UTC via GitHub Actions scheduled workflow</sub>
 
 </div>

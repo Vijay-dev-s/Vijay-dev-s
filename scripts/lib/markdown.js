@@ -4,7 +4,7 @@ function hex(c) { return c.replace('#', ''); }
 
 function shield(label, value, color, logo) {
   const l = encodeURIComponent(label);
-  const v = encodeURIComponent(value);
+  const v = encodeURIComponent(value).replace(/-/g, '--');
   const logoParam = logo ? `&logo=${logo}&logoColor=white` : '';
   return `https://img.shields.io/badge/${l}-${v}-${hex(color)}?style=for-the-badge${logoParam}`;
 }

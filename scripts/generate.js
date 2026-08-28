@@ -54,13 +54,21 @@ function main() {
 
   // 2. GitHub profile README (github-profile/Vijay-dev-s repo root)
   if (target === 'all' || target === 'github') {
-    const ghDir = path.join(ROOT, 'github-profile');
-    fs.mkdirSync(ghDir, { recursive: true });
+    const ghDir = ROOT;
     fs.mkdirSync(path.join(ghDir, 'assets', 'hero'), { recursive: true });
-    fs.copyFileSync(path.join(heroDir, heroFilename), path.join(ghDir, 'assets', 'hero', heroFilename));
-    const ghReadme = assembleReadme(theme, mode, config, `assets/hero/${heroFilename}`, 'GitHub Actions');
+    fs.copyFileSync(
+      path.join(heroDir, heroFilename),
+      path.join(ghDir, 'assets', 'hero', heroFilename)
+    );
+    const ghReadme = assembleReadme(
+      theme,
+      mode,
+      config,
+      `assets/hero/${heroFilename}`,
+      'GitHub Actions'
+    );
     fs.writeFileSync(path.join(ghDir, 'README.md'), ghReadme, 'utf8');
-    console.log(`[generate] wrote github-profile/README.md`);
+    console.log(`[generate] wrote README.md`);
   }
 
   // 3. GitLab profile README (gitlab-profile/coc29042004 repo root)
