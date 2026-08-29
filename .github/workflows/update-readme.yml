@@ -1,12 +1,8 @@
 name: Update profile README (theme rotation)
 
-# Runs on a schedule so the README reflects the current IST day/night theme,
-# plus can always be triggered manually from the Actions tab.
-#
-# Cron below fires every 30 minutes. That's frequent enough to catch the
-# 06:00 and 18:00 IST day/night boundaries and the midnight weekday change
-# within half an hour, without spamming commits. Adjust freely — see
-# "Changing the schedule" in the root README.
+# This workflow lives INSIDE the Vijay-dev-s repo, which is itself the
+# generator's ROOT — scripts/generate.js writes README.md and assets/hero/
+# straight to this repo's root. There is no nested folder here.
 on:
   schedule:
     - cron: '*/30 * * * *'
@@ -33,7 +29,7 @@ jobs:
           node-version: '20'
 
       - name: Generate current-theme README
-        run: node scripts/generate.js --target=github
+        run: node scripts/generate.js
 
       - name: Commit and push if changed
         run: |

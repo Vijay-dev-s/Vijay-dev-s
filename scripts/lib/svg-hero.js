@@ -8,6 +8,7 @@
 
 const W = 1200;
 const H = 300;
+const CHROME_H = 30;
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -32,11 +33,30 @@ function baseDefs(c, id) {
   </defs>`;
 }
 
-function frame(inner, c) {
-  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
-  <rect width="${W}" height="${H}" fill="${c.bg}"/>
+// A consistent terminal-chrome strip across all 8 layouts — this is the
+// one recognizable identity element that ties every theme together as
+// "the same developer's profile," while everything below it is free to
+// be a completely different composition.
+function terminalChrome(c, meta) {
+  const cmd = `visitor@${(meta.identity.github.username || 'dev').toLowerCase()}:~$ whoami · ${meta.themeName.toLowerCase()} · ${meta.mode}`;
+  return `
+  <rect width="${W}" height="${CHROME_H}" fill="${c.bg}" fill-opacity="0.9"/>
+  <line x1="0" y1="${CHROME_H}" x2="${W}" y2="${CHROME_H}" stroke="${c.accent}" stroke-opacity="0.3"/>
+  <circle cx="20" cy="15" r="5" fill="#ff5f56" opacity="0.85"/>
+  <circle cx="38" cy="15" r="5" fill="#ffbd2e" opacity="0.85"/>
+  <circle cx="56" cy="15" r="5" fill="#27c93f" opacity="0.85"/>
+  <text x="80" y="19" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="${c.text}" opacity="0.55">${esc(cmd)}</text>`;
+}
+
+function frame(inner, c, meta) {
+  const totalH = H + CHROME_H;
+  return `<svg width="${W}" height="${totalH}" viewBox="0 0 ${W} ${totalH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  <rect width="${W}" height="${totalH}" fill="${c.bg}"/>
+  ${meta ? terminalChrome(c, meta) : ''}
+  <g transform="translate(0,${CHROME_H})">
   ${inner}
-  <rect x="1" y="1" width="${W - 2}" height="${H - 2}" fill="none" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>
+  </g>
+  <rect x="1" y="1" width="${W - 2}" height="${totalH - 2}" fill="none" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>
 </svg>`;
 }
 
@@ -65,7 +85,7 @@ function split(id, c, m) {
   <text x="605" y="192" text-anchor="middle" ${mono} font-size="13" fill="${c.text}" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
   <text x="440" y="235" ${font} font-style="italic" font-size="14" fill="${c.text}" opacity="0.75">"${esc(m.quote.short)}"</text>
   ${monogramCorner(c)}
-  `, c);
+  `, c, m);
 }
 
 // ── TUESDAY · BLUE · "centered" — a compass, not a badge: service motif ──
@@ -88,7 +108,7 @@ function centered(id, c, m) {
   <text x="${cx}" y="88" text-anchor="middle" ${mono} font-size="15" fill="${c.accent2}" letter-spacing="3">${esc(m.roleForDay.toUpperCase())}</text>
   <text x="${cx}" y="245" text-anchor="middle" ${mono} font-size="13" fill="${c.text}" opacity="0.85" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
   <text x="${cx}" y="270" text-anchor="middle" ${font} font-style="italic" font-size="13" fill="${c.text}" opacity="0.6">"${esc(m.quote.short)}"</text>
-  `, c);
+  `, c, m);
 }
 
 // ── WEDNESDAY · GREEN · "showcase" (large quiet left panel + orb right) ──
@@ -121,7 +141,7 @@ function showcase(id, c, m) {
   <circle cx="960" cy="150" r="230" fill="url(#glow-${id})" filter="url(#blur-${id})"/>
   <circle cx="960" cy="150" r="80" fill="none" stroke="url(#grad-${id})" stroke-width="3"/>
   <text x="960" y="163" text-anchor="middle" ${font} font-size="46" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
-  `, c);
+  `, c, m);
 }
 
 // ── THURSDAY · WHITE · "editorial" (minimal, huge whitespace) ────────────
@@ -137,7 +157,7 @@ function editorial(id, c, m) {
   <circle cx="${W - 90}" cy="230" r="1.5" fill="${c.accent}"/>
   <circle cx="${W - 70}" cy="230" r="1.5" fill="${c.accent}"/>
   <circle cx="${W - 50}" cy="230" r="1.5" fill="${c.accent}"/>
-  `, c);
+  `, c, m);
 }
 
 // ── FRIDAY · GOLD · "asymmetric" — a thunderbolt, not a stripe: force ────
@@ -154,7 +174,7 @@ function asymmetric(id, c, m) {
   <rect x="60" y="150" width="380" height="2" fill="url(#grad-${id})"/>
   <text x="60" y="185" ${font} font-style="italic" font-size="14" fill="${c.text}" opacity="0.75">"${esc(m.quote.short)}"</text>
   <text x="60" y="255" ${mono} font-size="13" fill="${c.accent}" font-weight="700" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
-  `, c);
+  `, c, m);
 }
 
 // ── SATURDAY · VIOLET · "dashboard" — fractured shards, not plain cards ──
@@ -183,7 +203,7 @@ function dashboard(id, c, m) {
   }).join('')}
   <polygon points="48,192 1152,198 1148,255 52,253" fill="${c.surface}" stroke="${c.accent}" stroke-opacity="0.35"/>
   <text x="68" y="228" ${font} font-style="italic" font-size="13" fill="${c.text}" opacity="0.8">"${esc(m.quote.short)}"</text>
-  `, c);
+  `, c, m);
 }
 
 // ── SUNDAY · BLACK · "stealth" — a faint seal, not empty space: devotion ─
@@ -203,7 +223,7 @@ function stealth(id, c, m) {
   <text x="64" y="210" ${mono} font-size="14" fill="${c.accent2}" letter-spacing="6">${esc(m.roleForDay.toUpperCase())}</text>
   <line x1="64" y1="228" x2="${W - 64}" y2="228" stroke="${c.accent}" stroke-opacity="0.3"/>
   <text x="${W - 64}" y="258" text-anchor="end" ${mono} font-size="12" fill="${c.text}" opacity="0.5" letter-spacing="2">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
-  `, c);
+  `, c, m);
 }
 
 // ── BIRTHDAY · CYAN · "celebration" (center burst + sparkles + confetti) ─
@@ -226,13 +246,12 @@ function celebration(id, c, m) {
   ${baseDefs(c, id)}
   <circle cx="${W / 2}" cy="150" r="260" fill="url(#glow-${id})" filter="url(#blur-${id})"/>
   ${sparkles}${confetti}
-  <text x="${W / 2}" y="70" text-anchor="middle" ${font} font-size="20" font-weight="700" fill="${c.accent3 || c.accent2}" letter-spacing="4">✦ HAPPY BIRTHDAY ✦</text>
-  <circle cx="${W / 2}" cy="150" r="70" fill="none" stroke="url(#grad-${id})" stroke-width="3.5"/>
-  <circle cx="${W / 2}" cy="150" r="70" fill="${c.bg}" fill-opacity="0.4"/>
-  <text x="${W / 2}" y="163" text-anchor="middle" ${font} font-size="40" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
-  <text x="${W / 2}" y="235" text-anchor="middle" ${font} font-size="26" font-weight="700" fill="${c.text}">${esc(m.identity.name)}</text>
-  <text x="${W / 2}" y="260" text-anchor="middle" ${mono} font-size="13" fill="${c.accent2}" letter-spacing="2">${esc(m.roleForDay.toUpperCase())}</text>
-  `, c);
+  <circle cx="${W / 2}" cy="140" r="70" fill="none" stroke="url(#grad-${id})" stroke-width="3.5"/>
+  <circle cx="${W / 2}" cy="140" r="70" fill="${c.bg}" fill-opacity="0.4"/>
+  <text x="${W / 2}" y="153" text-anchor="middle" ${font} font-size="40" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
+  <text x="${W / 2}" y="238" text-anchor="middle" ${font} font-size="28" font-weight="700" fill="${c.text}">${esc(m.identity.name)}</text>
+  <text x="${W / 2}" y="264" text-anchor="middle" ${mono} font-size="13" fill="${c.accent2}" letter-spacing="2">${esc(m.roleForDay.toUpperCase())}</text>
+  `, c, m);
 }
 
 function monogramCorner(c) {

@@ -1,23 +1,30 @@
 {
   "_comment": "Single source of truth for the whole theme system. Both the Pages site (pages/index.html, fetches this at runtime) and the README generator (scripts/generate-readme.js, requires this at build time) read from this file. Edit here, everything else follows.",
-
   "identity": {
     "name": "Vijay S",
     "role": "Full Stack Developer",
-    "github": { "username": "Vijay-dev-s", "url": "https://github.com/Vijay-dev-s" },
-    "gitlab": { "username": "coc29042004", "displayName": "Vijay S", "url": "https://gitlab.com/coc29042004" },
+    "github": {
+      "username": "Vijay-dev-s",
+      "url": "https://github.com/Vijay-dev-s"
+    },
+    "gitlab": {
+      "username": "coc29042004",
+      "displayName": "Vijay S",
+      "url": "https://gitlab.com/coc29042004"
+    },
     "email": "vijays29042004@gmail.com",
     "linkedin": "https://linkedin.com/in/vijay--dev",
     "portfolio": "https://portfolio-vijay-dev.netlify.app"
   },
-
   "timing": {
     "timezone": "Asia/Kolkata",
     "dayStart": "06:00",
     "nightStart": "18:00",
-    "birthday": { "month": 4, "day": 29 }
+    "birthday": {
+      "month": 4,
+      "day": 29
+    }
   },
-
   "weekdayMap": {
     "0": "sunday",
     "1": "monday",
@@ -27,164 +34,426 @@
     "5": "friday",
     "6": "saturday"
   },
-
   "themes": {
     "monday": {
       "key": "monday",
       "themeName": "Crimson",
-      "characterName": "Rouge · Guy Crimson",
-      "icon": "🔴",
+      "characterName": "Rouge \u00b7 Guy Crimson",
+      "icon": "\ud83d\udd34",
       "background": "red-bg.png",
       "layout": "split",
-      "sectionOrder": ["hero", "banner", "stats", "quote", "skills", "projects", "links", "footer"],
-      "day": { "accent": "#e0362c", "accent2": "#ff6b52", "bg": "#1a0806", "surface": "rgba(224,54,44,0.08)", "glow": "rgba(224,54,44,0.45)", "text": "#fff5f2" },
-      "night": { "accent": "#8f1c17", "accent2": "#dc2626", "bg": "#0a0403", "surface": "rgba(143,28,23,0.10)", "glow": "rgba(220,38,38,0.55)", "text": "#f5e8e6" },
+      "sectionOrder": [
+        "hero",
+        "banner",
+        "stats",
+        "quote",
+        "skills",
+        "projects",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#e0362c",
+        "accent2": "#ff6b52",
+        "bg": "#1a0806",
+        "surface": "rgba(224,54,44,0.08)",
+        "glow": "rgba(224,54,44,0.45)",
+        "text": "#fff5f2"
+      },
+      "night": {
+        "accent": "#8f1c17",
+        "accent2": "#dc2626",
+        "bg": "#0a0403",
+        "surface": "rgba(143,28,23,0.10)",
+        "glow": "rgba(220,38,38,0.55)",
+        "text": "#f5e8e6"
+      },
       "quote": {
         "short": "I have maintained order across millennia. You disrupted it in a season.",
-        "full": "I have maintained order across millennia — power balanced like a sword between empires. You disrupted it in a single season. That, slime, is either the most foolish or most extraordinary thing I've witnessed.",
-        "attribution": "Rouge, Primordial Red · Dominion & Ancient Loneliness",
+        "full": "I have maintained order across millennia \u2014 power balanced like a sword between empires. You disrupted it in a single season. That, slime, is either the most foolish or most extraordinary thing I've witnessed.",
+        "attribution": "Rouge, Primordial Red \u00b7 Dominion & Ancient Loneliness",
         "emotion": "Dominion & Loneliness"
       },
-      "roleForDay": "Full Stack Developer"
+      "roleForDay": "Full Stack Developer",
+      "statsWidgetTheme": "radical"
     },
     "tuesday": {
       "key": "tuesday",
       "themeName": "Primordial Blue",
-      "characterName": "Bleu · Rain",
-      "icon": "🔵",
+      "characterName": "Bleu \u00b7 Rain",
+      "icon": "\ud83d\udd35",
       "background": "blue-bg.png",
       "layout": "centered",
-      "sectionOrder": ["hero", "banner", "quote", "stats", "skills", "projects", "links", "footer"],
-      "day": { "accent": "#2f7de0", "accent2": "#63aaff", "bg": "#06101f", "surface": "rgba(47,125,224,0.08)", "glow": "rgba(47,125,224,0.42)", "text": "#eef5ff" },
-      "night": { "accent": "#123a72", "accent2": "#3b82f6", "bg": "#03070d", "surface": "rgba(18,58,114,0.12)", "glow": "rgba(59,130,246,0.55)", "text": "#e4edfb" },
+      "sectionOrder": [
+        "hero",
+        "banner",
+        "quote",
+        "stats",
+        "skills",
+        "projects",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#2f7de0",
+        "accent2": "#63aaff",
+        "bg": "#06101f",
+        "surface": "rgba(47,125,224,0.08)",
+        "glow": "rgba(47,125,224,0.42)",
+        "text": "#eef5ff"
+      },
+      "night": {
+        "accent": "#123a72",
+        "accent2": "#3b82f6",
+        "bg": "#03070d",
+        "surface": "rgba(18,58,114,0.12)",
+        "glow": "rgba(59,130,246,0.55)",
+        "text": "#e4edfb"
+      },
       "quote": {
         "short": "My strength exists only in service to my lord's will.",
         "full": "I do not seek recognition. Everything I am, every precision honed across ages, channels into one purpose: to stand unshakeable beside the one I serve.",
-        "attribution": "Bleu, Primordial Blue · Loyalty & Self-Erasure",
+        "attribution": "Bleu, Primordial Blue \u00b7 Loyalty & Self-Erasure",
         "emotion": "Loyalty & Restraint"
       },
-      "roleForDay": "Full Stack Developer"
+      "roleForDay": "Full Stack Developer",
+      "statsWidgetTheme": "tokyonight"
     },
     "wednesday": {
       "key": "wednesday",
       "themeName": "Primordial Green",
-      "characterName": "Vert · Misery",
-      "icon": "🟢",
+      "characterName": "Vert \u00b7 Misery",
+      "icon": "\ud83d\udfe2",
       "background": "green-bg.png",
       "layout": "showcase",
-      "sectionOrder": ["hero", "projects", "banner", "stats", "quote", "skills", "links", "footer"],
-      "day": { "accent": "#1f9d55", "accent2": "#4ade80", "bg": "#04150c", "surface": "rgba(31,157,85,0.08)", "glow": "rgba(31,157,85,0.42)", "text": "#eefdf4" },
-      "night": { "accent": "#0f5c30", "accent2": "#22c55e", "bg": "#020a06", "surface": "rgba(15,92,48,0.13)", "glow": "rgba(34,197,94,0.55)", "text": "#dcf7e6" },
+      "sectionOrder": [
+        "hero",
+        "projects",
+        "banner",
+        "stats",
+        "quote",
+        "skills",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#1f9d55",
+        "accent2": "#4ade80",
+        "bg": "#04150c",
+        "surface": "rgba(31,157,85,0.08)",
+        "glow": "rgba(31,157,85,0.42)",
+        "text": "#eefdf4"
+      },
+      "night": {
+        "accent": "#0f5c30",
+        "accent2": "#22c55e",
+        "bg": "#020a06",
+        "surface": "rgba(15,92,48,0.13)",
+        "glow": "rgba(34,197,94,0.55)",
+        "text": "#dcf7e6"
+      },
       "quote": {
         "short": "Patience is the sharpest weapon in existence.",
         "full": "I have waited centuries for the correct moment, suppressed my own strength so completely that enemies walk past without recognition. When I finally move, the battle is already over.",
-        "attribution": "Vert, Primordial Green · Precision & Patient Power",
+        "attribution": "Vert, Primordial Green \u00b7 Precision & Patient Power",
         "emotion": "Precision & Silence"
       },
-      "roleForDay": "Full Stack Developer"
+      "roleForDay": "Full Stack Developer",
+      "statsWidgetTheme": "merko"
     },
     "thursday": {
       "key": "thursday",
       "themeName": "White",
-      "characterName": "Blanc · Testarossa",
-      "icon": "⚪",
+      "characterName": "Blanc \u00b7 Testarossa",
+      "icon": "\u26aa",
       "background": "white-bg.png",
       "layout": "editorial",
-      "sectionOrder": ["hero", "quote", "banner", "skills", "stats", "projects", "links", "footer"],
-      "day": { "accent": "#8a95a6", "accent2": "#ffffff", "bg": "#f5f6f8", "surface": "rgba(20,24,33,0.04)", "glow": "rgba(140,150,165,0.30)", "text": "#12141a" },
-      "night": { "accent": "#c3cad6", "accent2": "#f4f6fa", "bg": "#0c0e12", "surface": "rgba(255,255,255,0.05)", "glow": "rgba(203,213,225,0.35)", "text": "#f2f4f8" },
+      "sectionOrder": [
+        "hero",
+        "quote",
+        "banner",
+        "skills",
+        "stats",
+        "projects",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#8a95a6",
+        "accent2": "#ffffff",
+        "bg": "#f5f6f8",
+        "surface": "rgba(20,24,33,0.04)",
+        "glow": "rgba(140,150,165,0.30)",
+        "text": "#12141a"
+      },
+      "night": {
+        "accent": "#c3cad6",
+        "accent2": "#f4f6fa",
+        "bg": "#0c0e12",
+        "surface": "rgba(255,255,255,0.05)",
+        "glow": "rgba(203,213,225,0.35)",
+        "text": "#f2f4f8"
+      },
       "quote": {
         "short": "Gentle until harmed. Merciless thereafter.",
-        "full": "Do not mistake my silence for absence. I remember every kindness, every wound. I am gentle until something I love is taken — then I am the last thing you see before understanding ends.",
-        "attribution": "Blanc, Primordial White · Love Turned to Devastation",
+        "full": "Do not mistake my silence for absence. I remember every kindness, every wound. I am gentle until something I love is taken \u2014 then I am the last thing you see before understanding ends.",
+        "attribution": "Blanc, Primordial White \u00b7 Love Turned to Devastation",
         "emotion": "Love & Wrath"
       },
-      "roleForDay": "Full Stack Developer"
+      "roleForDay": "Full Stack Developer",
+      "statsWidgetTheme": "default"
     },
     "friday": {
       "key": "friday",
       "themeName": "Gold",
-      "characterName": "Jaune · Carrera",
-      "icon": "🟡",
+      "characterName": "Jaune \u00b7 Carrera",
+      "icon": "\ud83d\udfe1",
       "background": "yellow-bg.png",
       "layout": "asymmetric",
-      "sectionOrder": ["hero", "banner", "projects", "stats", "skills", "quote", "links", "footer"],
-      "day": { "accent": "#d9a30d", "accent2": "#ffd54a", "bg": "#1a1204", "surface": "rgba(217,163,13,0.09)", "glow": "rgba(217,163,13,0.45)", "text": "#fdf7e6" },
-      "night": { "accent": "#7a5906", "accent2": "#eab308", "bg": "#0a0700", "surface": "rgba(122,89,6,0.14)", "glow": "rgba(234,179,8,0.55)", "text": "#f6ecc8" },
+      "sectionOrder": [
+        "hero",
+        "banner",
+        "projects",
+        "stats",
+        "skills",
+        "quote",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#d9a30d",
+        "accent2": "#ffd54a",
+        "bg": "#1a1204",
+        "surface": "rgba(217,163,13,0.09)",
+        "glow": "rgba(217,163,13,0.45)",
+        "text": "#fdf7e6"
+      },
+      "night": {
+        "accent": "#7a5906",
+        "accent2": "#eab308",
+        "bg": "#0a0700",
+        "surface": "rgba(122,89,6,0.14)",
+        "glow": "rgba(234,179,8,0.55)",
+        "text": "#f6ecc8"
+      },
       "quote": {
         "short": "There is no problem that cannot be solved with sufficient force.",
         "full": "Strategy is for those who doubt their power. I am the thunder before the strike, the shockwave after impact. My name becomes the battlefield's last memory.",
-        "attribution": "Jaune, Primordial Yellow · Raw Unrestrained Force",
+        "attribution": "Jaune, Primordial Yellow \u00b7 Raw Unrestrained Force",
         "emotion": "Force & Thunder"
       },
-      "roleForDay": "Backend Engineer"
+      "roleForDay": "Backend Engineer",
+      "statsWidgetTheme": "gruvbox"
     },
     "saturday": {
       "key": "saturday",
       "themeName": "Violet",
-      "characterName": "Violet · Ultima",
-      "icon": "🟣",
+      "characterName": "Violet \u00b7 Ultima",
+      "icon": "\ud83d\udfe3",
       "background": "violet-bg.png",
       "layout": "dashboard",
-      "sectionOrder": ["hero", "stats", "banner", "skills", "quote", "projects", "links", "footer"],
-      "day": { "accent": "#8b3fd6", "accent2": "#c86bff", "bg": "#120a1a", "surface": "rgba(139,63,214,0.09)", "glow": "rgba(139,63,214,0.45)", "text": "#f6edff" },
-      "night": { "accent": "#4c1c85", "accent2": "#9333ea", "bg": "#06030a", "surface": "rgba(76,28,133,0.15)", "glow": "rgba(147,51,234,0.6)", "text": "#e9d9fb" },
+      "sectionOrder": [
+        "hero",
+        "stats",
+        "banner",
+        "skills",
+        "quote",
+        "projects",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#8b3fd6",
+        "accent2": "#c86bff",
+        "bg": "#120a1a",
+        "surface": "rgba(139,63,214,0.09)",
+        "glow": "rgba(139,63,214,0.45)",
+        "text": "#f6edff"
+      },
+      "night": {
+        "accent": "#4c1c85",
+        "accent2": "#9333ea",
+        "bg": "#06030a",
+        "surface": "rgba(76,28,133,0.15)",
+        "glow": "rgba(147,51,234,0.6)",
+        "text": "#e9d9fb"
+      },
       "quote": {
         "short": "Destruction is the purest form of joy I know.",
         "full": "People fear destruction because they see endings. I see the light that only escapes when something breaks. I don't destroy out of hatred. I destroy because it delights me completely.",
-        "attribution": "Violet, Primordial Purple · Chaotic Joy",
+        "attribution": "Violet, Primordial Purple \u00b7 Chaotic Joy",
         "emotion": "Chaos & Delight"
       },
-      "roleForDay": "Full Stack Developer"
+      "roleForDay": "Full Stack Developer",
+      "statsWidgetTheme": "dracula"
     },
     "sunday": {
       "key": "sunday",
       "themeName": "Black",
-      "characterName": "Noir · Diablo",
-      "icon": "⚫",
+      "characterName": "Noir \u00b7 Diablo",
+      "icon": "\u26ab",
       "background": "black-bg.png",
       "layout": "stealth",
-      "sectionOrder": ["hero", "banner", "quote", "stats", "skills", "projects", "links", "footer"],
-      "day": { "accent": "#6b7280", "accent2": "#9ca3af", "bg": "#101114", "surface": "rgba(107,114,128,0.08)", "glow": "rgba(107,114,128,0.35)", "text": "#eceef1" },
-      "night": { "accent": "#3d4148", "accent2": "#6b7280", "bg": "#020202", "surface": "rgba(61,65,72,0.14)", "glow": "rgba(107,114,128,0.4)", "text": "#d7dade" },
+      "sectionOrder": [
+        "hero",
+        "banner",
+        "quote",
+        "stats",
+        "skills",
+        "projects",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#6b7280",
+        "accent2": "#9ca3af",
+        "bg": "#101114",
+        "surface": "rgba(107,114,128,0.08)",
+        "glow": "rgba(107,114,128,0.35)",
+        "text": "#eceef1"
+      },
+      "night": {
+        "accent": "#3d4148",
+        "accent2": "#6b7280",
+        "bg": "#020202",
+        "surface": "rgba(61,65,72,0.14)",
+        "glow": "rgba(107,114,128,0.4)",
+        "text": "#d7dade"
+      },
       "quote": {
         "short": "Before you named me, I was nothing but power drifting without purpose.",
-        "full": "Before you named me, I was the oldest silence in the underworld — power without anchor. After you named me, every world I bend is in your service. That is the only meaning I have ever found.",
-        "attribution": "Noir, Primordial Black · Devotion as Identity",
+        "full": "Before you named me, I was the oldest silence in the underworld \u2014 power without anchor. After you named me, every world I bend is in your service. That is the only meaning I have ever found.",
+        "attribution": "Noir, Primordial Black \u00b7 Devotion as Identity",
         "emotion": "Devotion & Purpose"
       },
-      "roleForDay": "Backend Developer"
+      "roleForDay": "Backend Developer",
+      "statsWidgetTheme": "dark"
     },
     "birthday": {
       "key": "birthday",
       "themeName": "Cyan Birthday",
       "characterName": "Rimuru Tempest",
-      "icon": "✦",
+      "icon": "\u2726",
       "background": "cyan-bg.gif",
       "layout": "celebration",
-      "sectionOrder": ["hero", "banner", "quote", "stats", "skills", "projects", "links", "footer"],
-      "day": { "accent": "#22c3e6", "accent2": "#7ee8fc", "bg": "#04141a", "surface": "rgba(34,195,230,0.10)", "glow": "rgba(34,195,230,0.55)", "text": "#eafcff", "accent3": "#a78bfa" },
-      "night": { "accent": "#0e93b8", "accent2": "#38bdf8", "bg": "#020608", "surface": "rgba(14,147,184,0.16)", "glow": "rgba(56,189,248,0.65)", "text": "#dff8ff", "accent3": "#a78bfa" },
+      "sectionOrder": [
+        "hero",
+        "banner",
+        "quote",
+        "stats",
+        "skills",
+        "projects",
+        "links",
+        "footer"
+      ],
+      "day": {
+        "accent": "#22c3e6",
+        "accent2": "#7ee8fc",
+        "bg": "#04141a",
+        "surface": "rgba(34,195,230,0.10)",
+        "glow": "rgba(34,195,230,0.55)",
+        "text": "#eafcff",
+        "accent3": "#a78bfa"
+      },
+      "night": {
+        "accent": "#0e93b8",
+        "accent2": "#38bdf8",
+        "bg": "#020608",
+        "surface": "rgba(14,147,184,0.16)",
+        "glow": "rgba(56,189,248,0.65)",
+        "text": "#dff8ff",
+        "accent3": "#a78bfa"
+      },
       "quote": {
         "short": "I just wanted everyone around me to smile.",
         "full": "I didn't come to this world chasing power. I stumbled into it, named things, made friends, and somehow ended up reshaping the entire balance of the world. Maybe disruption was what this world needed all along.",
-        "attribution": "Rimuru Tempest · Connection & Accidental Transcendence",
+        "attribution": "Rimuru Tempest \u00b7 Connection & Accidental Transcendence",
         "emotion": "Connection & Wonder"
       },
-      "roleForDay": "Full Stack Developer"
+      "roleForDay": "Full Stack Developer",
+      "statsWidgetTheme": "synthwave"
     }
   },
-
   "content": {
+    "about": "Full stack developer working across Laravel/PHP backends and React/JS frontends, currently building production features at ONEPIXEL TECHNOLOGIES.",
+    "currentlyBuilding": "Production features at ONEPIXEL TECHNOLOGIES",
     "stats": [
-      { "label": "Projects", "value": "3+", "sub": "Live in production" },
-      { "label": "Experience", "value": "1yr", "sub": "ONEPIXEL TECH" },
-      { "label": "Stack", "value": "9+", "sub": "Technologies" }
+      {
+        "label": "Projects",
+        "value": "3+",
+        "sub": "Live in production"
+      },
+      {
+        "label": "Experience",
+        "value": "1yr",
+        "sub": "ONEPIXEL TECH"
+      },
+      {
+        "label": "Stack",
+        "value": "9+",
+        "sub": "Technologies"
+      }
     ],
-    "skills": ["PHP · Laravel", "Python", "Node.js", "MySQL", "JavaScript", "React", "Tailwind CSS", "REST API", "Git", "Linux", "HTML · CSS"],
+    "techGroups": {
+      "Backend": [
+        "PHP",
+        "Laravel",
+        "Node.js",
+        "REST API"
+      ],
+      "Frontend": [
+        "JavaScript",
+        "React",
+        "Tailwind CSS",
+        "HTML/CSS"
+      ],
+      "Database": [
+        "MySQL"
+      ],
+      "Tools": [
+        "Git",
+        "Linux",
+        "Python"
+      ]
+    },
+    "experience": [
+      {
+        "role": "Full Stack Developer",
+        "org": "ONEPIXEL TECHNOLOGIES",
+        "period": "Aug 2025 \u2013 Present",
+        "detail": "Built 5+ production pages and REST APIs; optimized 10+ legacy PHP modules."
+      },
+      {
+        "role": "B.E. Electronics & Communication",
+        "org": "Anna University",
+        "period": "2021 \u2013 2025",
+        "detail": "Undergraduate degree."
+      }
+    ],
+    "achievements": [],
     "projects": [
-      { "name": "Bikkerz.com", "description": "Backend development with Laravel. Product listings, user authentication modules, bug fixes and performance improvements.", "tags": ["Laravel", "MySQL", "PHP"], "url": "https://portfolio-vijay-dev.netlify.app/projects" },
-      { "name": "Seithikalam.com", "description": "News feed frontend with Laravel Blade serving 1000+ daily readers. Full-stack debugging and feature testing.", "tags": ["Laravel Blade", "PHP", "REST API"], "url": "https://portfolio-vijay-dev.netlify.app/projects" }
+      {
+        "name": "Bikkerz.com",
+        "description": "Backend development with Laravel. Product listings, user authentication modules, bug fixes and performance improvements.",
+        "tags": [
+          "Laravel",
+          "MySQL",
+          "PHP"
+        ],
+        "url": "https://portfolio-vijay-dev.netlify.app/projects",
+        "status": "Live"
+      },
+      {
+        "name": "Seithikalam.com",
+        "description": "News feed frontend with Laravel Blade serving 1000+ daily readers. Full-stack debugging and feature testing.",
+        "tags": [
+          "Laravel Blade",
+          "PHP",
+          "REST API"
+        ],
+        "url": "https://portfolio-vijay-dev.netlify.app/projects",
+        "status": "Live"
+      }
     ]
   }
 }
