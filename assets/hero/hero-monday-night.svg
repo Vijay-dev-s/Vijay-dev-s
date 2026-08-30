@@ -1,0 +1,40 @@
+<svg width="1200" height="330" viewBox="0 0 1200 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  <rect width="1200" height="330" fill="#0a0403"/>
+  
+  <rect width="1200" height="30" fill="#0a0403" fill-opacity="0.9"/>
+  <line x1="0" y1="30" x2="1200" y2="30" stroke="#8f1c17" stroke-opacity="0.3"/>
+  <circle cx="20" cy="15" r="5" fill="#ff5f56" opacity="0.85"/>
+  <circle cx="38" cy="15" r="5" fill="#ffbd2e" opacity="0.85"/>
+  <circle cx="56" cy="15" r="5" fill="#27c93f" opacity="0.85"/>
+  <text x="80" y="19" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#f5e8e6" opacity="0.55">visitor@vijay-dev-s:~$ whoami · crimson · night</text>
+  <g transform="translate(0,30)">
+  
+  
+  <defs>
+    <linearGradient id="grad-monday-night" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8f1c17"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <radialGradient id="glow-monday-night" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(220,38,38,0.55)" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="rgba(220,38,38,0.55)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-monday-night"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <polygon points="0,0 480,0 320,300 0,300" fill="rgba(143,28,23,0.10)"/>
+  <line x1="480" y1="0" x2="320" y2="300" stroke="#8f1c17" stroke-width="2" stroke-opacity="0.5"/>
+  <circle cx="230" cy="150" r="200" fill="url(#glow-monday-night)" filter="url(#blur-monday-night)"/>
+  <line x1="100" y1="50" x2="300" y2="250" stroke="#8f1c17" stroke-opacity="0.28" stroke-width="1.5"/>
+  <line x1="300" y1="50" x2="100" y2="250" stroke="#8f1c17" stroke-opacity="0.28" stroke-width="1.5"/>
+  <polygon points="200.0,74.0 265.8,112.0 265.8,188.0 200.0,226.0 134.2,188.0 134.2,112.0" fill="#0a0403" fill-opacity="0.5" stroke="url(#grad-monday-night)" stroke-width="3"/>
+  <text x="200" y="163" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="#dc2626">VS</text>
+  <text x="440" y="110" font-family="Georgia, 'Cinzel Decorative', serif" font-size="46" font-weight="700" fill="#f5e8e6">Vijay S</text>
+  <text x="440" y="148" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="18" fill="#dc2626" letter-spacing="2">FULL STACK DEVELOPER</text>
+  <rect x="440" y="172" width="330" height="30" rx="15" fill="rgba(143,28,23,0.10)" stroke="#8f1c17" stroke-opacity="0.5"/>
+  <text x="605" y="192" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#f5e8e6" letter-spacing="1">◆ CRIMSON · NIGHT</text>
+  <text x="440" y="235" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="14" fill="#f5e8e6" opacity="0.75">"I have maintained order across millennia. You disrupted it in a season."</text>
+  <text x="1170" y="30" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#f5e8e6" opacity="0.35" letter-spacing="1">VS</text>
+  
+  </g>
+  <rect x="1" y="1" width="1198" height="328" fill="none" stroke="#8f1c17" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>
+</svg>
