@@ -1,0 +1,35 @@
+<svg width="1200" height="330" viewBox="0 0 1200 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  <rect width="1200" height="330" fill="#101114"/>
+  
+  <rect width="1200" height="30" fill="#101114" fill-opacity="0.9"/>
+  <line x1="0" y1="30" x2="1200" y2="30" stroke="#6b7280" stroke-opacity="0.3"/>
+  <circle cx="20" cy="15" r="5" fill="#ff5f56" opacity="0.85"/>
+  <circle cx="38" cy="15" r="5" fill="#ffbd2e" opacity="0.85"/>
+  <circle cx="56" cy="15" r="5" fill="#27c93f" opacity="0.85"/>
+  <text x="80" y="19" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#eceef1" opacity="0.55">visitor@vijay-dev-s:~$ whoami · black · day</text>
+  <g transform="translate(0,30)">
+  
+  
+  <defs>
+    <linearGradient id="grad-sunday-day" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b7280"/>
+      <stop offset="100%" stop-color="#9ca3af"/>
+    </linearGradient>
+    <radialGradient id="glow-sunday-day" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(107,114,128,0.35)" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="rgba(107,114,128,0.35)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-sunday-day"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <polygon points="1096.0,150.0 1082.5,182.5 1050.0,196.0 1017.5,182.5 1004.0,150.0 1017.5,117.5 1050.0,104.0 1082.5,117.5" fill="none" stroke="#6b7280" stroke-opacity="0.25" stroke-width="1"/>
+  <circle cx="1050" cy="150" r="30" fill="none" stroke="#6b7280" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="1050" cy="150" r="3" fill="#9ca3af" opacity="0.6"/>
+  <circle cx="40" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="98" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="156" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="214" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="272" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="330" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="388" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="446" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="504" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="562" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="620" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="678" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="736" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="794" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="852" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="910" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="968" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="1026" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="1084" cy="20" r="1" fill="#6b7280" opacity="0.18"/><circle cx="1142" cy="20" r="1" fill="#6b7280" opacity="0.18"/>
+  <text x="60" y="175" font-family="Georgia, 'Cinzel Decorative', serif" font-size="72" font-weight="700" fill="#eceef1" opacity="0.94">VIJAY S</text>
+  <text x="64" y="210" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#9ca3af" letter-spacing="6">BACKEND DEVELOPER</text>
+  <line x1="64" y1="228" x2="1136" y2="228" stroke="#6b7280" stroke-opacity="0.3"/>
+  <text x="1136" y="258" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#eceef1" opacity="0.5" letter-spacing="2">◆ BLACK · DAY</text>
+  
+  </g>
+  <rect x="1" y="1" width="1198" height="328" fill="none" stroke="#6b7280" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>
+</svg>

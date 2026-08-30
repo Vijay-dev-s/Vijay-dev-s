@@ -1,14 +1,14 @@
-<img src="assets/hero/hero-sunday-night.svg" width="100%" alt=""/>
+<img src="assets/hero/hero-sunday-day.svg" width="100%" alt=""/>
 
-<img src="assets/panels/currently-sunday-night.svg" width="100%" alt=""/>
+<img src="assets/panels/currently-sunday-day.svg" width="100%" alt=""/>
 
-<img src="assets/panels/featured-sunday-night.svg" width="100%" alt=""/>
+<img src="assets/panels/featured-sunday-day.svg" width="100%" alt=""/>
 
 <sub>**[Seithikalam.com ↗](https://portfolio-vijay-dev.netlify.app/projects)**</sub>
 
-<img src="assets/panels/techstack-sunday-night.svg" width="100%" alt=""/>
+<img src="assets/panels/techstack-sunday-day.svg" width="100%" alt=""/>
 
-<img src="assets/panels/stats-sunday-night.svg" width="100%" alt=""/>
+<img src="assets/panels/stats-sunday-day.svg" width="100%" alt=""/>
 
 <div align="center">
 
@@ -24,15 +24,15 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-visit-3d4148?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Vijay--dev--s-3d4148?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
-[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-3d4148?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-3d4148?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
-[![Email](https://img.shields.io/badge/Email-contact-3d4148?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-visit-6b7280?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Vijay--dev--s-6b7280?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
+[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-6b7280?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-6b7280?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
+[![Email](https://img.shields.io/badge/Email-contact-6b7280?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
 
 </div>
 <div align="center">
 
-<sub>Vijay S · Full Stack Developer · <strong>Black</strong> (night) · auto-generated 2026-08-29 23:58 UTC via GitHub Actions</sub>
+<sub>Vijay S · Full Stack Developer · <strong>Black</strong> (day) · auto-generated 2026-08-30 05:13 UTC via GitHub Actions</sub>
 
 </div>
