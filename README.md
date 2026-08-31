@@ -1,63 +1,72 @@
-<img src="assets/hero/hero-monday-night.svg" width="100%" alt=""/>
+<div align="center">
+<img src="assets/hero/hero-tuesday-night.svg" width="100%" alt=""/>
+</div>
+<br/>
+
+<div align="center">
+
+> I do not seek recognition. Everything I am, every precision honed across ages, channels into one purpose: to stand unshakeable beside the one I serve.
+>
+> — *Bleu, Primordial Blue · Loyalty & Self-Erasure*
+
+</div>
+<br/>
+
+<div align="center">
+
+#### ◆ Featured Work
+
+</div>
+<div align="center"><img src="assets/panels/featured-tuesday-night.svg" width="90%" alt=""/></div>
 <br/>
 
 <table width="100%"><tr>
-<td width="55%" valign="top">
+<td width="50%" valign="top">
 
-#### ◆ About
+#### About
 
 Full stack developer working across Laravel/PHP backends and React/JS frontends, currently building production features at ONEPIXEL TECHNOLOGIES.
 
 </td>
-<td width="45%" valign="top">
+<td width="50%" valign="top">
 
-#### ◆ Current Focus
+#### Other Work
 
-I have maintained order across millennia. You disrupted it in a season.
+**[Seithikalam.com ↗](https://portfolio-vijay-dev.netlify.app/projects)**
 
 </td>
 </tr></table>
 <br/>
 
-#### ◆ Projects
-
-<img src="assets/panels/featured-monday-night.svg" width="100%" alt=""/>
+<div align="center"><img src="assets/panels/timeline-tuesday-night.svg" width="100%" alt=""/></div>
 <br/>
 
-<table width="100%"><tr><td width="100%"><img src="assets/panels/project-seithikalam-com-monday-night.svg" width="100%" alt=""/></td></tr></table>
-<br/>
-
-#### ◆ Experience
-
-<img src="assets/panels/timeline-monday-night.svg" width="100%" alt=""/>
-<br/>
-
-<table width="100%"><tr><td width="60%"><img src="assets/panels/techstack-monday-night.svg" width="100%" alt=""/></td><td width="40%"><img src="assets/panels/stats-monday-night.svg" width="100%" alt=""/></td></tr></table>
+<div align="center"><img src="assets/panels/techstack-tuesday-night.svg" width="100%" alt=""/></div>
 <br/>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Vijay-dev-s&show_icons=true&theme=radical&hide_border=true&count_private=true" width="49%" alt="GitHub stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vijay-dev-s&layout=compact&theme=radical&hide_border=true" width="38%" alt="Top languages"/>
+<img src="https://github-readme-stats.vercel.app/api?username=Vijay-dev-s&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%" alt="GitHub stats"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vijay-dev-s&layout=compact&theme=tokyonight&hide_border=true" width="38%" alt="Top languages"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Vijay-dev-s&theme=radical&hide_border=true" width="90%" alt="Streak stats"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Vijay-dev-s&theme=tokyonight&hide_border=true" width="90%" alt="Streak stats"/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=Vijay-dev-s&theme=radical&no-frame=true&row=1&column=6" width="90%" alt="Trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Vijay-dev-s&theme=tokyonight&no-frame=true&row=1&column=6" width="90%" alt="Trophies"/>
 
 </div>
 <br/>
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-visit-8f1c17?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Vijay--dev--s-8f1c17?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
-[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-8f1c17?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-8f1c17?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
-[![Email](https://img.shields.io/badge/Email-contact-8f1c17?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-visit-123a72?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Vijay--dev--s-123a72?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
+[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-123a72?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-123a72?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
+[![Email](https://img.shields.io/badge/Email-contact-123a72?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
 
 </div>
 <div align="center">
 
-<sub>Vijay S · Full Stack Developer · <strong>Crimson</strong> (night) · auto-generated 2026-08-31 13:31 UTC via GitHub Actions</sub>
+<sub>Vijay S · Full Stack Developer · <strong>Primordial Blue</strong> (night) · auto-generated 2026-08-31 19:53 UTC via GitHub Actions</sub>
 
 </div>
