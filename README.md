@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/hero/hero-tuesday-night.svg" width="100%" alt=""/>
+<img src="assets/hero/hero-tuesday-day.svg" width="100%" alt=""/>
 </div>
 <br/>
 
@@ -17,7 +17,7 @@
 #### ◆ Featured Work
 
 </div>
-<div align="center"><img src="assets/panels/featured-tuesday-night.svg" width="90%" alt=""/></div>
+<div align="center"><img src="assets/panels/featured-tuesday-day.svg" width="90%" alt=""/></div>
 <br/>
 
 <table width="100%"><tr>
@@ -38,10 +38,10 @@ Full stack developer working across Laravel/PHP backends and React/JS frontends,
 </tr></table>
 <br/>
 
-<div align="center"><img src="assets/panels/timeline-tuesday-night.svg" width="100%" alt=""/></div>
+<div align="center"><img src="assets/panels/timeline-tuesday-day.svg" width="100%" alt=""/></div>
 <br/>
 
-<div align="center"><img src="assets/panels/techstack-tuesday-night.svg" width="100%" alt=""/></div>
+<div align="center"><img src="assets/panels/techstack-tuesday-day.svg" width="100%" alt=""/></div>
 <br/>
 
 <div align="center">
@@ -58,15 +58,15 @@ Full stack developer working across Laravel/PHP backends and React/JS frontends,
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-visit-123a72?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Vijay--dev--s-123a72?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
-[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-123a72?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-123a72?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
-[![Email](https://img.shields.io/badge/Email-contact-123a72?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-visit-2f7de0?style=for-the-badge)](https://portfolio-vijay-dev.netlify.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Vijay--dev--s-2f7de0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Vijay-dev-s)
+[![GitLab](https://img.shields.io/badge/GitLab-coc29042004-2f7de0?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/coc29042004)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-2f7de0?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijay--dev)
+[![Email](https://img.shields.io/badge/Email-contact-2f7de0?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijays29042004@gmail.com)
 
 </div>
 <div align="center">
 
-<sub>Vijay S · Full Stack Developer · <strong>Primordial Blue</strong> (night) · auto-generated 2026-08-31 23:40 UTC via GitHub Actions</sub>
+<sub>Vijay S · Full Stack Developer · <strong>Primordial Blue</strong> (day) · auto-generated 2026-09-01 04:30 UTC via GitHub Actions</sub>
 
 </div>
