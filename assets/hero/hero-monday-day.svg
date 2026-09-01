@@ -33,8 +33,8 @@
   <text x="440" y="110" font-family="Georgia, 'Cinzel Decorative', serif" font-size="46" font-weight="700" fill="#fff5f2">Vijay S</text>
   <text x="440" y="148" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="18" fill="#ff6b52" letter-spacing="2">FULL STACK DEVELOPER</text>
   <rect x="440" y="172" width="330" height="30" rx="15" fill="rgba(224,54,44,0.08)" stroke="#e0362c" stroke-opacity="0.5"/>
-  <text x="605" y="192" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#fff5f2" letter-spacing="1">◆ CRIMSON · DAY</text>
-  <text x="440" y="235" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="14" fill="#fff5f2" opacity="0.75">"I have maintained order across millennia. You disrupted it in a season."</text>
+  <text x="605" y="192" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#fff5f2" letter-spacing="1">◆ CRIMSON · DAY</text>
+  <text x="440" y="235" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="16" fill="#fff5f2" opacity="0.75">"I have maintained order across millennia. You disrupted it in a season."</text>
   <text x="1170" y="30" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#fff5f2" opacity="0.35" letter-spacing="1">VS</text>
   
   </g>

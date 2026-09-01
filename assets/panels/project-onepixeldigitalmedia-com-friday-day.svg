@@ -1,16 +1,16 @@
-<svg width="380" height="190" viewBox="0 0 380 190" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="380" height="205" viewBox="0 0 380 205" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs></defs>
-  <rect x="0" y="0" width="380" height="190" fill="#1a1204"/>
+  <rect x="0" y="0" width="380" height="205" fill="#1a1204"/>
   
   <polygon points="334,0 380,0 380,46" fill="#d9a30d" fill-opacity="0.22"/>
   <polygon points="350,0 380,0 380,30" fill="url(#pcgrad)" fill-opacity="0.55"/>
   <circle cx="358" cy="22" r="5" fill="#ffd54a"/>
-  <text x="20" y="38" font-family="Georgia, 'Cinzel Decorative', serif" font-size="19" font-weight="700" fill="#fdf7e6">ONEPIXELDigitalMedia.com</text>
+  <text x="20" y="38" font-family="Georgia, 'Cinzel Decorative', serif" font-size="20" font-weight="700" fill="#fdf7e6">ONEPIXELDigitalMedia.com</text>
   <rect x="20" y="48" width="36" height="2.5" fill="url(#pcgrad)"/>
   <defs><linearGradient id="pcgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#d9a30d"/><stop offset="100%" stop-color="#ffd54a"/></linearGradient></defs>
-  <text x="20" y="72" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#fdf7e6" opacity="0.8">Tamil digital media platform —</text><text x="20" y="90" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#fdf7e6" opacity="0.8">categorized news, political coverage,</text><text x="20" y="108" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#fdf7e6" opacity="0.8">election updates, dynamic article</text>
-  <rect x="20" y="150" width="59.5" height="22" rx="11" fill="rgba(217,163,13,0.09)" stroke="#d9a30d" stroke-opacity="0.4"/><text x="49.75" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#ffd54a">Laravel</text><rect x="87.5" y="150" width="33.5" height="22" rx="11" fill="rgba(217,163,13,0.09)" stroke="#d9a30d" stroke-opacity="0.4"/><text x="104.25" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#ffd54a">PHP</text><rect x="129" y="150" width="33.5" height="22" rx="11" fill="rgba(217,163,13,0.09)" stroke="#d9a30d" stroke-opacity="0.4"/><text x="145.75" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#ffd54a">CMS</text>
-  <text x="20" y="178" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#fdf7e6" opacity="0.5" letter-spacing="1">LIVE</text>
+  <text x="20" y="74" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#fdf7e6" opacity="0.85">Tamil digital media platform —</text><text x="20" y="94" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#fdf7e6" opacity="0.85">categorized news, political coverage,</text><text x="20" y="114" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#fdf7e6" opacity="0.85">election updates, dynamic article</text>
+  <rect x="20" y="159" width="71.19999999999999" height="26" rx="13" fill="rgba(217,163,13,0.09)" stroke="#d9a30d" stroke-opacity="0.4"/><text x="55.599999999999994" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#ffd54a">Laravel</text><rect x="99.19999999999999" y="159" width="40.8" height="26" rx="13" fill="rgba(217,163,13,0.09)" stroke="#d9a30d" stroke-opacity="0.4"/><text x="119.6" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#ffd54a">PHP</text><rect x="148" y="159" width="40.8" height="26" rx="13" fill="rgba(217,163,13,0.09)" stroke="#d9a30d" stroke-opacity="0.4"/><text x="168.4" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#ffd54a">CMS</text>
+  <text x="20" y="192" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" fill="#fdf7e6" opacity="0.5" letter-spacing="1">LIVE</text>
   
   <line x1="0" y1="1" x2="380" y2="1" stroke="#d9a30d" stroke-width="2"/>
 </svg>

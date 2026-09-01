@@ -66,10 +66,12 @@ function projectLinksList(projects) {
   return projects.map(p => `**[${p.name} ↗](${p.url})**`).join('  ·  ');
 }
 
-// Chunks project-card images into rows of `perRow` so 6 real projects don't
-// get crammed into one impossibly-narrow row — used by every composer that
-// shows more than 2-3 cards.
-function projectGrid(cardPaths, perRow = 3) {
+// Chunks project-card images into rows of `perRow` so cards never get
+// crammed into a narrow column — GitHub's content column is only
+// ~800-860px, so 3-per-row was squeezing each card to ~260px (well below
+// its native 380px design width) and making every internal font
+// effectively tiny. 2-per-row keeps each card close to its native size.
+function projectGrid(cardPaths, perRow = 2) {
   const rows = [];
   for (let i = 0; i < cardPaths.length; i += perRow) rows.push(cardPaths.slice(i, i + perRow));
   return `<table width="100%">` + rows.map(row =>
@@ -91,7 +93,7 @@ function split(ctx) {
     `</tr></table>`, DIVIDER,
     `#### ◆ Projects\n`,
     img(paths.featured, '100%'), DIVIDER,
-    projectGrid(paths.projects, 3), DIVIDER,
+    projectGrid(paths.projects, 2), DIVIDER,
     `#### ◆ Experience\n`, img(paths.timeline, '100%'), DIVIDER,
     `<table width="100%"><tr><td width="60%">${img(paths.techStack, '100%')}</td><td width="40%">${img(paths.stats, '100%')}</td></tr></table>`,
     DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
@@ -130,7 +132,7 @@ function showcase(ctx) {
   return [
     img(paths.hero, '100%'), DIVIDER,
     `#### ◆ Project Showcase\n`,
-    projectGrid(allProjects, 3), DIVIDER,
+    projectGrid(allProjects, 2), DIVIDER,
     `#### ◆ Technical Stack\n`, img(paths.techStack, '100%'), DIVIDER,
     `<table width="100%"><tr>`,
     `<td width="65%" valign="top">\n\n<sub>${config.content.about}</sub>\n\n</td>`,
@@ -169,7 +171,7 @@ function asymmetric(ctx) {
     `<td width="32%" valign="top">${img(paths.stats, '100%')}</td>`,
     `</tr></table>`, DIVIDER,
     `#### ◆ Experience\n`, img(paths.timeline, '100%'), DIVIDER,
-    projectGrid(paths.projects, 3), DIVIDER,
+    projectGrid(paths.projects, 2), DIVIDER,
     img(paths.techStack, '100%'),
     DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
@@ -185,7 +187,7 @@ function dashboard(ctx) {
     `<table width="100%">`,
     `<tr><td width="50%" valign="top">${img(paths.stats, '100%')}</td><td width="50%" valign="top">${img(paths.featured, '100%')}</td></tr>`,
     `</table>`, DIVIDER,
-    `#### ◆ Projects\n`, projectGrid(paths.projects, 3), DIVIDER,
+    `#### ◆ Projects\n`, projectGrid(paths.projects, 2), DIVIDER,
     img(paths.techStack, '100%'), DIVIDER,
     img(paths.timeline, '100%'),
     DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),

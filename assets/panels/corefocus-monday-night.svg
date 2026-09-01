@@ -1,21 +1,25 @@
-<svg width="909" height="85" viewBox="0 0 909 85" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="909" height="195" viewBox="0 0 909 195" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs></defs>
   
-    <rect x="9" y="9" width="900" height="76" fill="#f5e8e6" opacity="0.9"/>
-    <rect x="0" y="0" width="900" height="76" fill="#0a0403" stroke="#8f1c17" stroke-width="4"/>
-    <rect x="0" y="0" width="18" height="76" fill="#8f1c17"/>
+    <rect x="9" y="9" width="900" height="186" fill="#f5e8e6" opacity="0.9"/>
+    <rect x="0" y="0" width="900" height="186" fill="#0a0403" stroke="#8f1c17" stroke-width="4"/>
+    <rect x="0" y="0" width="18" height="186" fill="#8f1c17"/>
   
     
-    <text x="24" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#dc2626" letter-spacing="1.5">BACKEND</text>
-    <text x="24" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#f5e8e6">Laravel · PHP · REST APIs</text>
-    <line x1="225" y1="16" x2="225" y2="60" stroke="#8f1c17" stroke-opacity="0.25"/>
-    <text x="249" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#dc2626" letter-spacing="1.5">WEB APPLICATIONS</text>
-    <text x="249" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#f5e8e6">Frontend · Backend</text>
-    <line x1="450" y1="16" x2="450" y2="60" stroke="#8f1c17" stroke-opacity="0.25"/>
-    <text x="474" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#dc2626" letter-spacing="1.5">DATABASES</text>
-    <text x="474" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#f5e8e6">MySQL · MariaDB · CRUD</text>
-    <line x1="675" y1="16" x2="675" y2="60" stroke="#8f1c17" stroke-opacity="0.25"/>
-    <text x="699" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#dc2626" letter-spacing="1.5">AI INTEGRATION</text>
-    <text x="699" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#f5e8e6">AI APIs · AI Applications</text>
-  <rect x="0" y="0" width="900" height="76" fill="none" stroke="#f5e8e6" stroke-width="1" stroke-opacity="0.4"/>
+    
+    <text x="28" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#dc2626" letter-spacing="1.5">BACKEND</text>
+    <text x="28" y="58" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#f5e8e6">Laravel · PHP · REST APIs</text>
+    <line x1="450" y1="14" x2="450" y2="79" stroke="#8f1c17" stroke-opacity="0.25"/>
+    
+    <text x="478" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#dc2626" letter-spacing="1.5">WEB APPLICATIONS</text>
+    <text x="478" y="58" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#f5e8e6">Frontend · Backend</text>
+    
+    <line x1="14" y1="93" x2="886" y2="93" stroke="#8f1c17" stroke-opacity="0.18"/>
+    <text x="28" y="127" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#dc2626" letter-spacing="1.5">DATABASES</text>
+    <text x="28" y="151" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#f5e8e6">MySQL · MariaDB · CRUD</text>
+    <line x1="450" y1="107" x2="450" y2="172" stroke="#8f1c17" stroke-opacity="0.25"/>
+    
+    <text x="478" y="127" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#dc2626" letter-spacing="1.5">AI INTEGRATION</text>
+    <text x="478" y="151" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#f5e8e6">AI APIs · AI Applications</text>
+  <rect x="0" y="0" width="900" height="186" fill="none" stroke="#f5e8e6" stroke-width="1" stroke-opacity="0.4"/>
 </svg>

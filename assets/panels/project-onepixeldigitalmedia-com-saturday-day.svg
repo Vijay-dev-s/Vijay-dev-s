@@ -1,22 +1,23 @@
-<svg width="380" height="190" viewBox="0 0 380 190" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="380" height="205" viewBox="0 0 380 205" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs>
-    <clipPath id="clip-p4"><rect x="0" y="0" width="380" height="190" rx="22"/></clipPath>
+    <clipPath id="clip-p4"><rect x="0" y="0" width="380" height="205" rx="22"/></clipPath>
     <linearGradient id="aur1-p4" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8b3fd6" stop-opacity="0.35"/><stop offset="100%" stop-color="#8b3fd6" stop-opacity="0"/></linearGradient>
     <linearGradient id="aur2-p4" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c86bff" stop-opacity="0.3"/><stop offset="100%" stop-color="#c86bff" stop-opacity="0"/></linearGradient></defs>
   
-    <rect x="0" y="0" width="380" height="190" rx="22" fill="rgba(139,63,214,0.09)"/>
-    <path d="M 0,38 Q 114,-19 228,28.5 T 380,9.5 L 380,0 L 0,0 Z" fill="url(#aur1-p4)"/>
-    <path d="M 0,190 Q 152,218.49999999999997 266,161.5 T 380,190 Z" fill="url(#aur2-p4)"/>
+    <rect x="0" y="0" width="380" height="205" rx="22" fill="#120a1a"/>
+    <rect x="0" y="0" width="380" height="205" rx="22" fill="rgba(139,63,214,0.09)"/>
+    <path d="M 0,41 Q 114,-20.5 228,30.75 T 380,10.25 L 380,0 L 0,0 Z" fill="url(#aur1-p4)"/>
+    <path d="M 0,205 Q 152,235.74999999999997 266,174.25 T 380,205 Z" fill="url(#aur2-p4)"/>
   <g clip-path="url(#clip-p4)">
   <polygon points="334,0 380,0 380,46" fill="#8b3fd6" fill-opacity="0.22"/>
   <polygon points="350,0 380,0 380,30" fill="url(#pcgrad)" fill-opacity="0.55"/>
   <circle cx="358" cy="22" r="5" fill="#c86bff"/>
-  <text x="20" y="38" font-family="Georgia, 'Cinzel Decorative', serif" font-size="19" font-weight="700" fill="#f6edff">ONEPIXELDigitalMedia.com</text>
+  <text x="20" y="38" font-family="Georgia, 'Cinzel Decorative', serif" font-size="20" font-weight="700" fill="#f6edff">ONEPIXELDigitalMedia.com</text>
   <rect x="20" y="48" width="36" height="2.5" fill="url(#pcgrad)"/>
   <defs><linearGradient id="pcgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8b3fd6"/><stop offset="100%" stop-color="#c86bff"/></linearGradient></defs>
-  <text x="20" y="72" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#f6edff" opacity="0.8">Tamil digital media platform —</text><text x="20" y="90" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#f6edff" opacity="0.8">categorized news, political coverage,</text><text x="20" y="108" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#f6edff" opacity="0.8">election updates, dynamic article</text>
-  <rect x="20" y="150" width="59.5" height="22" rx="11" fill="rgba(139,63,214,0.09)" stroke="#8b3fd6" stroke-opacity="0.4"/><text x="49.75" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#c86bff">Laravel</text><rect x="87.5" y="150" width="33.5" height="22" rx="11" fill="rgba(139,63,214,0.09)" stroke="#8b3fd6" stroke-opacity="0.4"/><text x="104.25" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#c86bff">PHP</text><rect x="129" y="150" width="33.5" height="22" rx="11" fill="rgba(139,63,214,0.09)" stroke="#8b3fd6" stroke-opacity="0.4"/><text x="145.75" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#c86bff">CMS</text>
-  <text x="20" y="178" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#f6edff" opacity="0.5" letter-spacing="1">LIVE</text>
+  <text x="20" y="74" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#f6edff" opacity="0.85">Tamil digital media platform —</text><text x="20" y="94" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#f6edff" opacity="0.85">categorized news, political coverage,</text><text x="20" y="114" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#f6edff" opacity="0.85">election updates, dynamic article</text>
+  <rect x="20" y="159" width="71.19999999999999" height="26" rx="13" fill="rgba(139,63,214,0.09)" stroke="#8b3fd6" stroke-opacity="0.4"/><text x="55.599999999999994" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#c86bff">Laravel</text><rect x="99.19999999999999" y="159" width="40.8" height="26" rx="13" fill="rgba(139,63,214,0.09)" stroke="#8b3fd6" stroke-opacity="0.4"/><text x="119.6" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#c86bff">PHP</text><rect x="148" y="159" width="40.8" height="26" rx="13" fill="rgba(139,63,214,0.09)" stroke="#8b3fd6" stroke-opacity="0.4"/><text x="168.4" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#c86bff">CMS</text>
+  <text x="20" y="192" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" fill="#f6edff" opacity="0.5" letter-spacing="1">LIVE</text>
   </g>
-  <rect x="1" y="1" width="378" height="188" rx="21" fill="none" stroke="#c86bff" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="1" y="1" width="378" height="203" rx="21" fill="none" stroke="#c86bff" stroke-opacity="0.35" stroke-width="1"/>
 </svg>

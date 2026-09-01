@@ -1,21 +1,25 @@
-<svg width="900" height="76" viewBox="0 0 900 76" xmlns="http://www.w3.org/2000/svg" role="img">
-  <defs><clipPath id="clip-p10"><path d="M 6.84,0 L 889.056,0 Q 900,0 900,6.84 L 900,69.16 Q 900,76 893.16,76 L 9.575999999999999,76 Q 0,76 0,67.108 L 0,6.84 Q 0,0 6.84,0 Z"/></clipPath><linearGradient id="org-grad-p10" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1f9d55" stop-opacity="0.12"/><stop offset="100%" stop-color="#4ade80" stop-opacity="0.04"/></linearGradient></defs>
-  <path d="M 6.84,0 L 889.056,0 Q 900,0 900,6.84 L 900,69.16 Q 900,76 893.16,76 L 9.575999999999999,76 Q 0,76 0,67.108 L 0,6.84 Q 0,0 6.84,0 Z" fill="#04150c"/><path d="M 6.84,0 L 889.056,0 Q 900,0 900,6.84 L 900,69.16 Q 900,76 893.16,76 L 9.575999999999999,76 Q 0,76 0,67.108 L 0,6.84 Q 0,0 6.84,0 Z" fill="url(#org-grad-p10)"/>
+<svg width="900" height="186" viewBox="0 0 900 186" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs><clipPath id="clip-p10"><path d="M 16.74,0 L 873.216,0 Q 900,0 900,16.74 L 900,169.26 Q 900,186 883.26,186 L 23.435999999999996,186 Q 0,186 0,164.238 L 0,16.74 Q 0,0 16.74,0 Z"/></clipPath><linearGradient id="org-grad-p10" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1f9d55" stop-opacity="0.12"/><stop offset="100%" stop-color="#4ade80" stop-opacity="0.04"/></linearGradient></defs>
+  <path d="M 16.74,0 L 873.216,0 Q 900,0 900,16.74 L 900,169.26 Q 900,186 883.26,186 L 23.435999999999996,186 Q 0,186 0,164.238 L 0,16.74 Q 0,0 16.74,0 Z" fill="#04150c"/><path d="M 16.74,0 L 873.216,0 Q 900,0 900,16.74 L 900,169.26 Q 900,186 883.26,186 L 23.435999999999996,186 Q 0,186 0,164.238 L 0,16.74 Q 0,0 16.74,0 Z" fill="url(#org-grad-p10)"/>
   <g clip-path="url(#clip-p10)">
     
-    <text x="24" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="1.5">BACKEND</text>
-    <text x="24" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#eefdf4">Laravel · PHP · REST APIs</text>
-    <line x1="225" y1="16" x2="225" y2="60" stroke="#1f9d55" stroke-opacity="0.25"/>
-    <text x="249" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="1.5">WEB APPLICATIONS</text>
-    <text x="249" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#eefdf4">Frontend · Backend</text>
-    <line x1="450" y1="16" x2="450" y2="60" stroke="#1f9d55" stroke-opacity="0.25"/>
-    <text x="474" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="1.5">DATABASES</text>
-    <text x="474" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#eefdf4">MySQL · MariaDB · CRUD</text>
-    <line x1="675" y1="16" x2="675" y2="60" stroke="#1f9d55" stroke-opacity="0.25"/>
-    <text x="699" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="1.5">AI INTEGRATION</text>
-    <text x="699" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#eefdf4">AI APIs · AI Applications</text></g>
+    
+    <text x="28" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#4ade80" letter-spacing="1.5">BACKEND</text>
+    <text x="28" y="58" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#eefdf4">Laravel · PHP · REST APIs</text>
+    <line x1="450" y1="14" x2="450" y2="79" stroke="#1f9d55" stroke-opacity="0.25"/>
+    
+    <text x="478" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#4ade80" letter-spacing="1.5">WEB APPLICATIONS</text>
+    <text x="478" y="58" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#eefdf4">Frontend · Backend</text>
+    
+    <line x1="14" y1="93" x2="886" y2="93" stroke="#1f9d55" stroke-opacity="0.18"/>
+    <text x="28" y="127" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#4ade80" letter-spacing="1.5">DATABASES</text>
+    <text x="28" y="151" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#eefdf4">MySQL · MariaDB · CRUD</text>
+    <line x1="450" y1="107" x2="450" y2="172" stroke="#1f9d55" stroke-opacity="0.25"/>
+    
+    <text x="478" y="127" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#4ade80" letter-spacing="1.5">AI INTEGRATION</text>
+    <text x="478" y="151" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#eefdf4">AI APIs · AI Applications</text></g>
   
-    <path d="M 6.84,0 L 889.056,0 Q 900,0 900,6.84 L 900,69.16 Q 900,76 893.16,76 L 9.575999999999999,76 Q 0,76 0,67.108 L 0,6.84 Q 0,0 6.84,0 Z" fill="none" stroke="#1f9d55" stroke-opacity="0.4" stroke-width="1.5"/>
-    <path d="M 0,53.199999999999996 Q 135,45.6 90,30.400000000000002" fill="none" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
-    <circle cx="90" cy="30.400000000000002" r="2.5" fill="#4ade80" opacity="0.5"/>
+    <path d="M 16.74,0 L 873.216,0 Q 900,0 900,16.74 L 900,169.26 Q 900,186 883.26,186 L 23.435999999999996,186 Q 0,186 0,164.238 L 0,16.74 Q 0,0 16.74,0 Z" fill="none" stroke="#1f9d55" stroke-opacity="0.4" stroke-width="1.5"/>
+    <path d="M 0,130.2 Q 135,111.6 90,74.4" fill="none" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+    <circle cx="90" cy="74.4" r="2.5" fill="#4ade80" opacity="0.5"/>
 </svg>

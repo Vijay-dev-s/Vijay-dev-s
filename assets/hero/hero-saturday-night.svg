@@ -27,16 +27,16 @@
   <polygon points="40,20 90,45 60,75" fill="#4c1c85" fill-opacity="0.16" stroke="#9333ea" stroke-opacity="0.3" stroke-width="0.75"/><polygon points="1140,15 1180,55 1120,60" fill="#4c1c85" fill-opacity="0.16" stroke="#9333ea" stroke-opacity="0.3" stroke-width="0.75"/><polygon points="1160,200 1195,240 1140,260" fill="#4c1c85" fill-opacity="0.16" stroke="#9333ea" stroke-opacity="0.3" stroke-width="0.75"/><polygon points="15,220 55,260 10,270" fill="#4c1c85" fill-opacity="0.16" stroke="#9333ea" stroke-opacity="0.3" stroke-width="0.75"/>
   <text x="48" y="55" font-family="Georgia, 'Cinzel Decorative', serif" font-size="26" font-weight="700" fill="#e9d9fb">Vijay S — Dashboard</text>
   <polygon points="48,95 308,85 298,175 56,175" fill="rgba(76,28,133,0.15)" stroke="#4c1c85" stroke-opacity="0.5"/>
-    <text x="68" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#9333ea" letter-spacing="1">NAME</text>
+    <text x="68" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#9333ea" letter-spacing="1">NAME</text>
     <text x="68" y="150" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" font-weight="700" fill="#e9d9fb">Vijay S</text><polygon points="328,95 588,85 578,175 336,175" fill="rgba(76,28,133,0.15)" stroke="#4c1c85" stroke-opacity="0.5"/>
-    <text x="348" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#9333ea" letter-spacing="1">ROLE</text>
+    <text x="348" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#9333ea" letter-spacing="1">ROLE</text>
     <text x="348" y="150" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" font-weight="700" fill="#e9d9fb">Full Stack Developer</text><polygon points="608,95 868,85 858,175 616,175" fill="rgba(76,28,133,0.15)" stroke="#4c1c85" stroke-opacity="0.5"/>
-    <text x="628" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#9333ea" letter-spacing="1">THEME</text>
+    <text x="628" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#9333ea" letter-spacing="1">THEME</text>
     <text x="628" y="150" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" font-weight="700" fill="#e9d9fb">Violet</text><polygon points="888,95 1148,85 1138,175 896,175" fill="rgba(76,28,133,0.15)" stroke="#4c1c85" stroke-opacity="0.5"/>
-    <text x="908" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#9333ea" letter-spacing="1">MODE</text>
+    <text x="908" y="118" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#9333ea" letter-spacing="1">MODE</text>
     <text x="908" y="150" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" font-weight="700" fill="#e9d9fb">NIGHT</text>
   <polygon points="48,192 1152,198 1148,255 52,253" fill="rgba(76,28,133,0.15)" stroke="#4c1c85" stroke-opacity="0.35"/>
-  <text x="68" y="228" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="13" fill="#e9d9fb" opacity="0.8">"Destruction is the purest form of joy I know."</text>
+  <text x="68" y="228" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="15" fill="#e9d9fb" opacity="0.8">"Destruction is the purest form of joy I know."</text>
   
   </g>
   <rect x="1" y="1" width="1198" height="328" rx="22" fill="none" stroke="#9333ea" stroke-opacity="0.4" stroke-width="1.5"/>

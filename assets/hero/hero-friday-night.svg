@@ -30,8 +30,8 @@
   <text x="60" y="90" font-family="Georgia, 'Cinzel Decorative', serif" font-size="44" font-weight="700" fill="#f6ecc8" transform="rotate(-2 60 90)">Vijay S</text>
   <text x="60" y="122" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#eab308" letter-spacing="3">BACKEND ENGINEER</text>
   <rect x="60" y="150" width="380" height="2" fill="url(#grad-friday-night)"/>
-  <text x="60" y="185" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="14" fill="#f6ecc8" opacity="0.75">"There is no problem that cannot be solved with sufficient force."</text>
-  <text x="60" y="255" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#7a5906" font-weight="700" letter-spacing="1">◆ GOLD · NIGHT</text>
+  <text x="60" y="185" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="16" fill="#f6ecc8" opacity="0.75">"There is no problem that cannot be solved with sufficient force."</text>
+  <text x="60" y="255" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#7a5906" font-weight="700" letter-spacing="1">◆ GOLD · NIGHT</text>
   
   </g>
   <line x1="0" y1="1" x2="1200" y2="1" stroke="#7a5906" stroke-width="2.5"/><line x1="0" y1="329" x2="1200" y2="329" stroke="#7a5906" stroke-opacity="0.3" stroke-width="1"/>

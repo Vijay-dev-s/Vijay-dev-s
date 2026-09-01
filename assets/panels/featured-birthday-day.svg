@@ -1,23 +1,25 @@
-<svg width="780" height="220" viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="780" height="232" viewBox="0 0 780 232" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs>
-    <clipPath id="clip-p0"><rect x="0" y="0" width="780" height="220" rx="30.800000000000004"/></clipPath>
+    <clipPath id="clip-p0"><rect x="0" y="0" width="780" height="232" rx="32.480000000000004"/></clipPath>
     <linearGradient id="chrome-p0" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#7ee8fc" stop-opacity="0.9"/>
       <stop offset="15%" stop-color="#22c3e6" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#22c3e6" stop-opacity="0.15"/>
     </linearGradient></defs>
-  <rect x="0" y="0" width="780" height="220" rx="30.800000000000004" fill="rgba(34,195,230,0.10)"/>
+  
+    <rect x="0" y="0" width="780" height="232" rx="32.480000000000004" fill="#04141a"/>
+    <rect x="0" y="0" width="780" height="232" rx="32.480000000000004" fill="rgba(34,195,230,0.10)"/>
   <g clip-path="url(#clip-p0)">
-  <text x="30" y="30" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#7ee8fc" letter-spacing="2">FEATURED PROJECT</text>
-  <text x="30" y="66" font-family="Georgia, 'Cinzel Decorative', serif" font-size="34" font-weight="700" fill="#eafcff">Bikkerz.com</text>
-  <rect x="30" y="82" width="60" height="3" fill="#22c3e6"/>
-  <text x="30" y="112" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#eafcff" opacity="0.82">Marketplace/service platform — backend development, database</text><text x="30" y="134" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#eafcff" opacity="0.82">integration, authentication and application maintenance.</text>
-  <text x="30" y="194" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#7ee8fc" letter-spacing="1">LARAVEL   ·   MYSQL   ·   PHP</text>
+  <text x="30" y="32" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#7ee8fc" letter-spacing="2">FEATURED PROJECT</text>
+  <text x="30" y="68" font-family="Georgia, 'Cinzel Decorative', serif" font-size="34" font-weight="700" fill="#eafcff">Bikkerz.com</text>
+  <rect x="30" y="84" width="60" height="3" fill="#22c3e6"/>
+  <text x="30" y="115" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#eafcff" opacity="0.85">Marketplace/service platform — backend development,</text><text x="30" y="139" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#eafcff" opacity="0.85">database integration, authentication and application</text><text x="30" y="163" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#eafcff" opacity="0.85">maintenance.</text>
+  <text x="30" y="206" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#7ee8fc" letter-spacing="1">LARAVEL   ·   MYSQL   ·   PHP</text>
   <circle cx="740" cy="40" r="6" fill="#7ee8fc"/>
-  <text x="726" y="44" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#eafcff" opacity="0.6" letter-spacing="1">LIVE</text>
+  <text x="726" y="44" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#eafcff" opacity="0.6" letter-spacing="1">LIVE</text>
   </g>
   
-    <rect x="1.5" y="1.5" width="777" height="217" rx="28.6" fill="none" stroke="url(#chrome-p0)" stroke-width="2.5"/>
+    <rect x="1.5" y="1.5" width="777" height="229" rx="30.16" fill="none" stroke="url(#chrome-p0)" stroke-width="2.5"/>
     <ellipse cx="218.40000000000003" cy="6" rx="171.6" ry="5" fill="#ffffff" opacity="0.35"/>
     <text x="764" y="18" text-anchor="end" font-size="12" fill="#7ee8fc" opacity="0.8">✦</text>
 </svg>

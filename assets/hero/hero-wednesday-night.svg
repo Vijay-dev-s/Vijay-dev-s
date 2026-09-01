@@ -27,11 +27,11 @@
   <line x1="720" y1="0" x2="720" y2="300" stroke="#0f5c30" stroke-opacity="0.4"/>
   <circle cx="0" cy="300" r="100" fill="none" stroke="#0f5c30" stroke-opacity="0.12" stroke-width="1"/><circle cx="0" cy="300" r="130" fill="none" stroke="#0f5c30" stroke-opacity="0.12" stroke-width="1"/><circle cx="0" cy="300" r="160" fill="none" stroke="#0f5c30" stroke-opacity="0.12" stroke-width="1"/>
   <text x="48" y="70" font-family="Georgia, 'Cinzel Decorative', serif" font-size="34" font-weight="700" fill="#dcf7e6">Vijay S</text>
-  <text x="48" y="98" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#22c55e" letter-spacing="2">FULL STACK DEVELOPER</text>
+  <text x="48" y="98" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="16" fill="#22c55e" letter-spacing="2">FULL STACK DEVELOPER</text>
   <rect x="48" y="126" width="3" height="90" fill="url(#grad-wednesday-night)"/>
   <text x="68" y="150" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="16" fill="#dcf7e6" opacity="0.85">"Patience is the sharpest weapon in</text>
   <text x="68" y="174" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="16" fill="#dcf7e6" opacity="0.85">existence."</text>
-  <text x="68" y="205" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#22c55e" letter-spacing="1" opacity="0.8">◆ PRIMORDIAL GREEN · NIGHT</text>
+  <text x="68" y="205" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#22c55e" letter-spacing="1" opacity="0.8">◆ PRIMORDIAL GREEN · NIGHT</text>
   <circle cx="960" cy="150" r="230" fill="url(#glow-wednesday-night)" filter="url(#blur-wednesday-night)"/>
   <circle cx="960" cy="150" r="80" fill="none" stroke="url(#grad-wednesday-night)" stroke-width="3"/>
   <text x="960" y="163" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="46" font-weight="700" fill="#22c55e">VS</text>

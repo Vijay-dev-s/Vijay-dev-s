@@ -1,18 +1,21 @@
-<svg width="900" height="96" viewBox="0 0 900 96" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="900" height="93" viewBox="0 0 900 93" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs>
-    <clipPath id="clip-p9"><rect x="0" y="0" width="900" height="96" rx="13.440000000000001"/></clipPath>
+    <clipPath id="clip-p9"><rect x="0" y="0" width="900" height="93" rx="13.020000000000001"/></clipPath>
     <linearGradient id="chrome-p9" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#7ee8fc" stop-opacity="0.9"/>
       <stop offset="15%" stop-color="#22c3e6" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#22c3e6" stop-opacity="0.15"/>
     </linearGradient></defs>
-  <rect x="0" y="0" width="900" height="96" rx="13.440000000000001" fill="rgba(34,195,230,0.10)"/>
+  
+    <rect x="0" y="0" width="900" height="93" rx="13.020000000000001" fill="#04141a"/>
+    <rect x="0" y="0" width="900" height="93" rx="13.020000000000001" fill="rgba(34,195,230,0.10)"/>
   <g clip-path="url(#clip-p9)">
     
-    <text x="24" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#7ee8fc" letter-spacing="1.5">BUILDING</text>
-    <text x="24" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#eafcff">Production features at ONEPIXEL</text><text x="24" y="80" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#eafcff">TECHNOLOGIES</text></g>
+    
+    <text x="28" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" font-weight="700" fill="#7ee8fc" letter-spacing="1.5">BUILDING</text>
+    <text x="28" y="58" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" fill="#eafcff">Production features at ONEPIXEL TECHNOLOGIES</text></g>
   
-    <rect x="1.5" y="1.5" width="897" height="93" rx="12.48" fill="none" stroke="url(#chrome-p9)" stroke-width="2.5"/>
+    <rect x="1.5" y="1.5" width="897" height="90" rx="12.09" fill="none" stroke="url(#chrome-p9)" stroke-width="2.5"/>
     <ellipse cx="252.00000000000003" cy="6" rx="198" ry="5" fill="#ffffff" opacity="0.35"/>
     <text x="884" y="18" text-anchor="end" font-size="12" fill="#7ee8fc" opacity="0.8">✦</text>
 </svg>

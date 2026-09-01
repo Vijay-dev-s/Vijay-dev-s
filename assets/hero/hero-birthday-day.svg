@@ -29,7 +29,7 @@
   <circle cx="600" cy="140" r="70" fill="#04141a" fill-opacity="0.4"/>
   <text x="600" y="153" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="#7ee8fc">VS</text>
   <text x="600" y="238" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="28" font-weight="700" fill="#eafcff">Vijay S</text>
-  <text x="600" y="264" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#7ee8fc" letter-spacing="2">FULL STACK DEVELOPER</text>
+  <text x="600" y="264" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="15" fill="#7ee8fc" letter-spacing="2">FULL STACK DEVELOPER</text>
   
   </g>
   <rect x="1.5" y="1.5" width="1197" height="327" rx="18" fill="none" stroke="url(#hchrome-birthday-day)" stroke-width="2.5"/>

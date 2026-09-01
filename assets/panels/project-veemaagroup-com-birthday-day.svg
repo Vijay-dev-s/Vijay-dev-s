@@ -1,25 +1,27 @@
-<svg width="380" height="190" viewBox="0 0 380 190" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="380" height="205" viewBox="0 0 380 205" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs>
-    <clipPath id="clip-p2"><rect x="0" y="0" width="380" height="190" rx="26.6"/></clipPath>
+    <clipPath id="clip-p2"><rect x="0" y="0" width="380" height="205" rx="28.700000000000003"/></clipPath>
     <linearGradient id="chrome-p2" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#7ee8fc" stop-opacity="0.9"/>
       <stop offset="15%" stop-color="#22c3e6" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#22c3e6" stop-opacity="0.15"/>
     </linearGradient></defs>
-  <rect x="0" y="0" width="380" height="190" rx="26.6" fill="rgba(34,195,230,0.10)"/>
+  
+    <rect x="0" y="0" width="380" height="205" rx="28.700000000000003" fill="#04141a"/>
+    <rect x="0" y="0" width="380" height="205" rx="28.700000000000003" fill="rgba(34,195,230,0.10)"/>
   <g clip-path="url(#clip-p2)">
   <polygon points="334,0 380,0 380,46" fill="#22c3e6" fill-opacity="0.22"/>
   <polygon points="350,0 380,0 380,30" fill="url(#pcgrad)" fill-opacity="0.55"/>
   <circle cx="358" cy="22" r="5" fill="#7ee8fc"/>
-  <text x="20" y="38" font-family="Georgia, 'Cinzel Decorative', serif" font-size="19" font-weight="700" fill="#eafcff">VeemaaGroup.com</text>
+  <text x="20" y="38" font-family="Georgia, 'Cinzel Decorative', serif" font-size="20" font-weight="700" fill="#eafcff">VeemaaGroup.com</text>
   <rect x="20" y="48" width="36" height="2.5" fill="url(#pcgrad)"/>
   <defs><linearGradient id="pcgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#22c3e6"/><stop offset="100%" stop-color="#7ee8fc"/></linearGradient></defs>
-  <text x="20" y="72" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#eafcff" opacity="0.8">Construction and infrastructure company</text><text x="20" y="90" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#eafcff" opacity="0.8">website — services, projects, company</text><text x="20" y="108" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#eafcff" opacity="0.8">information and business enquiries.</text>
-  <rect x="20" y="150" width="59.5" height="22" rx="11" fill="rgba(34,195,230,0.10)" stroke="#22c3e6" stroke-opacity="0.4"/><text x="49.75" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#7ee8fc">Laravel</text><rect x="87.5" y="150" width="33.5" height="22" rx="11" fill="rgba(34,195,230,0.10)" stroke="#22c3e6" stroke-opacity="0.4"/><text x="104.25" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#7ee8fc">PHP</text>
-  <text x="20" y="178" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#eafcff" opacity="0.5" letter-spacing="1">LIVE</text>
+  <text x="20" y="74" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#eafcff" opacity="0.85">Construction and infrastructure</text><text x="20" y="94" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#eafcff" opacity="0.85">company website — services, projects,</text><text x="20" y="114" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#eafcff" opacity="0.85">company information and business</text>
+  <rect x="20" y="159" width="71.19999999999999" height="26" rx="13" fill="rgba(34,195,230,0.10)" stroke="#22c3e6" stroke-opacity="0.4"/><text x="55.599999999999994" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#7ee8fc">Laravel</text><rect x="99.19999999999999" y="159" width="40.8" height="26" rx="13" fill="rgba(34,195,230,0.10)" stroke="#22c3e6" stroke-opacity="0.4"/><text x="119.6" y="176" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" fill="#7ee8fc">PHP</text>
+  <text x="20" y="192" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" fill="#eafcff" opacity="0.5" letter-spacing="1">LIVE</text>
   </g>
   
-    <rect x="1.5" y="1.5" width="377" height="187" rx="24.7" fill="none" stroke="url(#chrome-p2)" stroke-width="2.5"/>
+    <rect x="1.5" y="1.5" width="377" height="202" rx="26.650000000000002" fill="none" stroke="url(#chrome-p2)" stroke-width="2.5"/>
     <ellipse cx="106.4" cy="6" rx="83.6" ry="5" fill="#ffffff" opacity="0.35"/>
     <text x="364" y="18" text-anchor="end" font-size="12" fill="#7ee8fc" opacity="0.8">✦</text>
 </svg>

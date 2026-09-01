@@ -1,6 +1,6 @@
-<svg width="900" height="170" viewBox="0 0 900 170" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="900" height="190" viewBox="0 0 900 190" xmlns="http://www.w3.org/2000/svg" role="img">
   <defs>
-    <clipPath id="clip-p6"><rect x="0" y="0" width="900" height="170" rx="20"/></clipPath>
+    <clipPath id="clip-p6"><rect x="0" y="0" width="900" height="190" rx="20"/></clipPath>
     <linearGradient id="glass-sheen-p6" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
       <stop offset="45%" stop-color="#ffffff" stop-opacity="0.03"/>
@@ -11,19 +11,20 @@
       <stop offset="100%" stop-color="#123a72" stop-opacity="0.25"/>
     </linearGradient></defs>
   
-    <rect x="0" y="0" width="900" height="170" rx="20" fill="rgba(18,58,114,0.12)"/>
-    <rect x="0" y="0" width="900" height="170" rx="20" fill="url(#glass-sheen-p6)"/>
+    <rect x="0" y="0" width="900" height="190" rx="20" fill="#03070d"/>
+    <rect x="0" y="0" width="900" height="190" rx="20" fill="rgba(18,58,114,0.12)"/>
+    <rect x="0" y="0" width="900" height="190" rx="20" fill="url(#glass-sheen-p6)"/>
   <g clip-path="url(#clip-p6)"><defs><linearGradient id="tlgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#123a72"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
-    <circle cx="245" cy="50" r="7" fill="url(#tlgrad)"/>
-    <line x1="253" y1="50" x2="647" y2="50" stroke="#123a72" stroke-opacity="0.4" stroke-width="2"/>
-    <text x="245" y="82" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" font-weight="700" fill="#e4edfb">Full Stack Developer</text>
-    <text x="245" y="100" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" fill="#3b82f6">ONEPIXEL TECHNOLOGIES</text>
-    <text x="245" y="116" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#e4edfb" opacity="0.65">Jul 2025 – Present</text>
-    <circle cx="655" cy="50" r="7" fill="url(#tlgrad)"/>
+    <circle cx="245" cy="56" r="8" fill="url(#tlgrad)"/>
+    <line x1="254" y1="56" x2="646" y2="56" stroke="#123a72" stroke-opacity="0.4" stroke-width="2"/>
+    <text x="245" y="92" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" font-weight="700" fill="#e4edfb">Full Stack Developer</text>
+    <text x="245" y="114" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#3b82f6">ONEPIXEL TECHNOLOGIES</text>
+    <text x="245" y="134" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#e4edfb" opacity="0.65">Jul 2025 – Present</text>
+    <circle cx="655" cy="56" r="8" fill="url(#tlgrad)"/>
     
-    <text x="655" y="82" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" font-weight="700" fill="#e4edfb">Software Intern</text>
-    <text x="655" y="100" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" fill="#3b82f6">ONEPIXEL TECHNOLOGIES</text>
-    <text x="655" y="116" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#e4edfb" opacity="0.65">Jan 2025 – Jun 2025</text></g>
+    <text x="655" y="92" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="17" font-weight="700" fill="#e4edfb">Software Intern</text>
+    <text x="655" y="114" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#3b82f6">ONEPIXEL TECHNOLOGIES</text>
+    <text x="655" y="134" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="13" fill="#e4edfb" opacity="0.65">Jan 2025 – Jun 2025</text></g>
   
-    <rect x="1" y="1" width="898" height="168" rx="19" fill="none" stroke="url(#glass-border-p6)" stroke-width="1.5"/>
+    <rect x="1" y="1" width="898" height="188" rx="19" fill="none" stroke="url(#glass-border-p6)" stroke-width="1.5"/>
 </svg>

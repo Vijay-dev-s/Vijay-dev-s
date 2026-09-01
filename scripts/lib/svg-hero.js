@@ -126,8 +126,8 @@ function split(id, c, m) {
   <text x="440" y="110" ${font} font-size="46" font-weight="700" fill="${c.text}">${esc(m.identity.name)}</text>
   <text x="440" y="148" ${mono} font-size="18" fill="${c.accent2}" letter-spacing="2">${esc(m.roleForDay.toUpperCase())}</text>
   <rect x="440" y="172" width="330" height="30" rx="15" fill="${c.surface}" stroke="${c.accent}" stroke-opacity="0.5"/>
-  <text x="605" y="192" text-anchor="middle" ${mono} font-size="13" fill="${c.text}" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
-  <text x="440" y="235" ${font} font-style="italic" font-size="14" fill="${c.text}" opacity="0.75">"${esc(m.quote.short)}"</text>
+  <text x="605" y="192" text-anchor="middle" ${mono} font-size="15" fill="${c.text}" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
+  <text x="440" y="235" ${font} font-style="italic" font-size="16" fill="${c.text}" opacity="0.75">"${esc(m.quote.short)}"</text>
   ${monogramCorner(c)}
   `, c, m);
 }
@@ -158,8 +158,8 @@ function centered(id, c, m) {
   <text x="${cx}" y="${cy + 4}" text-anchor="middle" ${font} font-size="32" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
   <text x="${cx}" y="60" text-anchor="middle" ${font} font-size="38" font-weight="700" fill="${c.text}">${esc(m.identity.name)}</text>
   <text x="${cx}" y="88" text-anchor="middle" ${mono} font-size="15" fill="${c.accent2}" letter-spacing="3">${esc(m.roleForDay.toUpperCase())}</text>
-  <text x="${cx}" y="245" text-anchor="middle" ${mono} font-size="13" fill="${c.text}" opacity="0.85" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
-  <text x="${cx}" y="270" text-anchor="middle" ${font} font-style="italic" font-size="13" fill="${c.text}" opacity="0.6">"${esc(m.quote.short)}"</text>
+  <text x="${cx}" y="245" text-anchor="middle" ${mono} font-size="15" fill="${c.text}" opacity="0.85" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
+  <text x="${cx}" y="270" text-anchor="middle" ${font} font-style="italic" font-size="15" fill="${c.text}" opacity="0.6">"${esc(m.quote.short)}"</text>
   `, c, m);
 }
 
@@ -185,11 +185,11 @@ function showcase(id, c, m) {
   <line x1="720" y1="0" x2="720" y2="${H}" stroke="${c.accent}" stroke-opacity="0.4"/>
   ${[100, 130, 160].map(r => `<circle cx="0" cy="${H}" r="${r}" fill="none" stroke="${c.accent}" stroke-opacity="0.12" stroke-width="1"/>`).join('')}
   <text x="48" y="70" ${font} font-size="34" font-weight="700" fill="${c.text}">${esc(m.identity.name)}</text>
-  <text x="48" y="98" ${mono} font-size="14" fill="${c.accent2}" letter-spacing="2">${esc(m.roleForDay.toUpperCase())}</text>
+  <text x="48" y="98" ${mono} font-size="16" fill="${c.accent2}" letter-spacing="2">${esc(m.roleForDay.toUpperCase())}</text>
   <rect x="48" y="126" width="3" height="90" fill="url(#grad-${id})"/>
   <text x="68" y="150" ${font} font-style="italic" font-size="16" fill="${c.text}" opacity="0.85">"${esc(lines[0] || '')}</text>
   <text x="68" y="174" ${font} font-style="italic" font-size="16" fill="${c.text}" opacity="0.85">${esc(lines[1] || '')}"</text>
-  <text x="68" y="205" ${mono} font-size="11" fill="${c.accent2}" letter-spacing="1" opacity="0.8">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
+  <text x="68" y="205" ${mono} font-size="15" fill="${c.accent2}" letter-spacing="1" opacity="0.8">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
   <circle cx="960" cy="150" r="230" fill="url(#glow-${id})" filter="url(#blur-${id})"/>
   <circle cx="960" cy="150" r="80" fill="none" stroke="url(#grad-${id})" stroke-width="3"/>
   <text x="960" y="163" text-anchor="middle" ${font} font-size="46" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
@@ -202,10 +202,10 @@ function editorial(id, c, m) {
   ${baseDefs(c, id)}
   <line x1="70" y1="90" x2="70" y2="210" stroke="${c.accent}" stroke-width="1.5"/>
   <text x="100" y="130" ${font} font-size="42" font-weight="400" fill="${c.text}" letter-spacing="1">${esc(m.identity.name)}</text>
-  <text x="100" y="160" ${mono} font-size="14" fill="${c.accent}" letter-spacing="4">${esc(m.roleForDay.toUpperCase())}</text>
-  <text x="100" y="200" ${font} font-style="italic" font-size="14" fill="${c.text}" opacity="0.55">"${esc(m.quote.short)}"</text>
-  <text x="${W - 60}" y="45" text-anchor="end" ${mono} font-size="12" fill="${c.accent}" letter-spacing="2">${esc(m.themeName.toUpperCase())}</text>
-  <text x="${W - 60}" y="65" text-anchor="end" ${mono} font-size="12" fill="${c.text}" opacity="0.5" letter-spacing="2">${m.mode.toUpperCase()}</text>
+  <text x="100" y="160" ${mono} font-size="16" fill="${c.accent}" letter-spacing="4">${esc(m.roleForDay.toUpperCase())}</text>
+  <text x="100" y="200" ${font} font-style="italic" font-size="16" fill="${c.text}" opacity="0.55">"${esc(m.quote.short)}"</text>
+  <text x="${W - 60}" y="45" text-anchor="end" ${mono} font-size="16" fill="${c.accent}" letter-spacing="2">${esc(m.themeName.toUpperCase())}</text>
+  <text x="${W - 60}" y="65" text-anchor="end" ${mono} font-size="16" fill="${c.text}" opacity="0.5" letter-spacing="2">${m.mode.toUpperCase()}</text>
   <circle cx="${W - 90}" cy="230" r="1.5" fill="${c.accent}"/>
   <circle cx="${W - 70}" cy="230" r="1.5" fill="${c.accent}"/>
   <circle cx="${W - 50}" cy="230" r="1.5" fill="${c.accent}"/>
@@ -224,8 +224,8 @@ function asymmetric(id, c, m) {
   <text x="60" y="90" ${font} font-size="44" font-weight="700" fill="${c.text}" transform="rotate(-2 60 90)">${esc(m.identity.name)}</text>
   <text x="60" y="122" ${mono} font-size="15" fill="${c.accent2}" letter-spacing="3">${esc(m.roleForDay.toUpperCase())}</text>
   <rect x="60" y="150" width="380" height="2" fill="url(#grad-${id})"/>
-  <text x="60" y="185" ${font} font-style="italic" font-size="14" fill="${c.text}" opacity="0.75">"${esc(m.quote.short)}"</text>
-  <text x="60" y="255" ${mono} font-size="13" fill="${c.accent}" font-weight="700" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
+  <text x="60" y="185" ${font} font-style="italic" font-size="16" fill="${c.text}" opacity="0.75">"${esc(m.quote.short)}"</text>
+  <text x="60" y="255" ${mono} font-size="15" fill="${c.accent}" font-weight="700" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
   `, c, m);
 }
 
@@ -250,11 +250,11 @@ function dashboard(id, c, m) {
     const x = 48 + i * 280;
     const nick = i % 2 === 0 ? '4 2 12 2 12 12 2 12' : '2 2 10 2 12 10 4 12'; // asymmetric corner cuts, alternating
     return `<polygon points="${x},95 ${x + 260},85 ${x + 250},175 ${x + 8},175" fill="${c.surface}" stroke="${c.accent}" stroke-opacity="0.5"/>
-    <text x="${x + 20}" y="118" ${mono} font-size="11" fill="${c.accent2}" letter-spacing="1">${esc(label)}</text>
+    <text x="${x + 20}" y="118" ${mono} font-size="15" fill="${c.accent2}" letter-spacing="1">${esc(label)}</text>
     <text x="${x + 20}" y="150" ${font} font-size="17" font-weight="700" fill="${c.text}">${esc(val)}</text>`;
   }).join('')}
   <polygon points="48,192 1152,198 1148,255 52,253" fill="${c.surface}" stroke="${c.accent}" stroke-opacity="0.35"/>
-  <text x="68" y="228" ${font} font-style="italic" font-size="13" fill="${c.text}" opacity="0.8">"${esc(m.quote.short)}"</text>
+  <text x="68" y="228" ${font} font-style="italic" font-size="15" fill="${c.text}" opacity="0.8">"${esc(m.quote.short)}"</text>
   `, c, m);
 }
 
@@ -272,9 +272,9 @@ function stealth(id, c, m) {
   <circle cx="${sx}" cy="${sy}" r="3" fill="${c.accent2}" opacity="0.6"/>
   ${Array.from({length:20},(_,i)=>`<circle cx="${40+i*58}" cy="20" r="1" fill="${c.accent}" opacity="0.18"/>`).join('')}
   <text x="60" y="175" ${font} font-size="72" font-weight="700" fill="${c.text}" opacity="0.94">${esc(m.identity.name.toUpperCase())}</text>
-  <text x="64" y="210" ${mono} font-size="14" fill="${c.accent2}" letter-spacing="6">${esc(m.roleForDay.toUpperCase())}</text>
+  <text x="64" y="210" ${mono} font-size="16" fill="${c.accent2}" letter-spacing="6">${esc(m.roleForDay.toUpperCase())}</text>
   <line x1="64" y1="228" x2="${W - 64}" y2="228" stroke="${c.accent}" stroke-opacity="0.3"/>
-  <text x="${W - 64}" y="258" text-anchor="end" ${mono} font-size="12" fill="${c.text}" opacity="0.5" letter-spacing="2">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
+  <text x="${W - 64}" y="258" text-anchor="end" ${mono} font-size="16" fill="${c.text}" opacity="0.5" letter-spacing="2">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
   `, c, m);
 }
 
@@ -302,7 +302,7 @@ function celebration(id, c, m) {
   <circle cx="${W / 2}" cy="140" r="70" fill="${c.bg}" fill-opacity="0.4"/>
   <text x="${W / 2}" y="153" text-anchor="middle" ${font} font-size="40" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
   <text x="${W / 2}" y="238" text-anchor="middle" ${font} font-size="28" font-weight="700" fill="${c.text}">${esc(m.identity.name)}</text>
-  <text x="${W / 2}" y="264" text-anchor="middle" ${mono} font-size="13" fill="${c.accent2}" letter-spacing="2">${esc(m.roleForDay.toUpperCase())}</text>
+  <text x="${W / 2}" y="264" text-anchor="middle" ${mono} font-size="15" fill="${c.accent2}" letter-spacing="2">${esc(m.roleForDay.toUpperCase())}</text>
   `, c, m);
 }
 

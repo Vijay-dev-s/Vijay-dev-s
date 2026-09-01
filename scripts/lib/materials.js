@@ -53,6 +53,7 @@ function glass(w, h, c, id) {
       <stop offset="100%" stop-color="${c.accent}" stop-opacity="0.25"/>
     </linearGradient>`,
     bg: `
+    <rect x="0" y="0" width="${w}" height="${h}" rx="20" fill="${c.bg}"/>
     <rect x="0" y="0" width="${w}" height="${h}" rx="20" fill="${c.surface}"/>
     <rect x="0" y="0" width="${w}" height="${h}" rx="20" fill="url(#glass-sheen-${id})"/>`,
     fg: `
@@ -111,6 +112,7 @@ function aurora(w, h, c, id) {
     <linearGradient id="aur1-${id}" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="${c.accent}" stop-opacity="0.35"/><stop offset="100%" stop-color="${c.accent}" stop-opacity="0"/></linearGradient>
     <linearGradient id="aur2-${id}" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${c.accent2}" stop-opacity="0.3"/><stop offset="100%" stop-color="${c.accent2}" stop-opacity="0"/></linearGradient>`,
     bg: `
+    <rect x="0" y="0" width="${w}" height="${h}" rx="22" fill="${c.bg}"/>
     <rect x="0" y="0" width="${w}" height="${h}" rx="22" fill="${c.surface}"/>
     <path d="M 0,${h * 0.2} Q ${w * 0.3},${-h * 0.1} ${w * 0.6},${h * 0.15} T ${w},${h * 0.05} L ${w},0 L 0,0 Z" fill="url(#aur1-${id})"/>
     <path d="M 0,${h} Q ${w * 0.4},${h * 1.15} ${w * 0.7},${h * 0.85} T ${w},${h} Z" fill="url(#aur2-${id})"/>`,
@@ -149,7 +151,9 @@ function y2k(w, h, c, id) {
       <stop offset="15%" stop-color="${c.accent}" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="${c.accent}" stop-opacity="0.15"/>
     </linearGradient>`,
-    bg: `<rect x="0" y="0" width="${w}" height="${h}" rx="${h * 0.14}" fill="${c.surface}"/>`,
+    bg: `
+    <rect x="0" y="0" width="${w}" height="${h}" rx="${h * 0.14}" fill="${c.bg}"/>
+    <rect x="0" y="0" width="${w}" height="${h}" rx="${h * 0.14}" fill="${c.surface}"/>`,
     fg: `
     <rect x="1.5" y="1.5" width="${w - 3}" height="${h - 3}" rx="${h * 0.13}" fill="none" stroke="url(#chrome-${id})" stroke-width="2.5"/>
     <ellipse cx="${w * 0.28}" cy="6" rx="${w * 0.22}" ry="5" fill="#ffffff" opacity="0.35"/>

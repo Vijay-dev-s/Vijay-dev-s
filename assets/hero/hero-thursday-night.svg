@@ -25,10 +25,10 @@
   </defs>
   <line x1="70" y1="90" x2="70" y2="210" stroke="#c3cad6" stroke-width="1.5"/>
   <text x="100" y="130" font-family="Georgia, 'Cinzel Decorative', serif" font-size="42" font-weight="400" fill="#f2f4f8" letter-spacing="1">Vijay S</text>
-  <text x="100" y="160" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#c3cad6" letter-spacing="4">FULL STACK DEVELOPER</text>
-  <text x="100" y="200" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="14" fill="#f2f4f8" opacity="0.55">"Gentle until harmed. Merciless thereafter."</text>
-  <text x="1140" y="45" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#c3cad6" letter-spacing="2">WHITE</text>
-  <text x="1140" y="65" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#f2f4f8" opacity="0.5" letter-spacing="2">NIGHT</text>
+  <text x="100" y="160" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="16" fill="#c3cad6" letter-spacing="4">FULL STACK DEVELOPER</text>
+  <text x="100" y="200" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="16" fill="#f2f4f8" opacity="0.55">"Gentle until harmed. Merciless thereafter."</text>
+  <text x="1140" y="45" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="16" fill="#c3cad6" letter-spacing="2">WHITE</text>
+  <text x="1140" y="65" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="16" fill="#f2f4f8" opacity="0.5" letter-spacing="2">NIGHT</text>
   <circle cx="1110" cy="230" r="1.5" fill="#c3cad6"/>
   <circle cx="1130" cy="230" r="1.5" fill="#c3cad6"/>
   <circle cx="1150" cy="230" r="1.5" fill="#c3cad6"/>
