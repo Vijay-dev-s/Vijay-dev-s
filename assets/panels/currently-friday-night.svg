@@ -1,0 +1,9 @@
+<svg width="900" height="96" viewBox="0 0 900 96" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs></defs>
+  <rect x="0" y="0" width="900" height="96" fill="#0a0700"/>
+  
+    
+    <text x="24" y="34" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700" fill="#eab308" letter-spacing="1.5">BUILDING</text>
+    <text x="24" y="60" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#f6ecc8">Production features at ONEPIXEL</text><text x="24" y="80" font-family="Georgia, 'Cinzel Decorative', serif" font-size="14" fill="#f6ecc8">TECHNOLOGIES</text>
+  <line x1="0" y1="1" x2="900" y2="1" stroke="#7a5906" stroke-width="2"/>
+</svg>

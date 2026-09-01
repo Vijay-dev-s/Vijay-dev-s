@@ -50,14 +50,58 @@ function terminalChrome(c, meta) {
 
 function frame(inner, c, meta) {
   const totalH = H + CHROME_H;
-  return `<svg width="${W}" height="${totalH}" viewBox="0 0 ${W} ${totalH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  const style = (meta && meta.panelStyle) || 'glass';
+  const borderFx = heroBorderFx(style, W, totalH, c, meta ? meta.id : 'x');
+  const off = borderFx.offset || 0;
+  const canvasW = W + off, canvasH = totalH + off;
+  return `<svg width="${canvasW}" height="${canvasH}" viewBox="0 0 ${canvasW} ${canvasH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  ${borderFx.defs}
+  ${borderFx.shadow || ''}
   <rect width="${W}" height="${totalH}" fill="${c.bg}"/>
   ${meta ? terminalChrome(c, meta) : ''}
   <g transform="translate(0,${CHROME_H})">
   ${inner}
   </g>
-  <rect x="1" y="1" width="${W - 2}" height="${totalH - 2}" fill="none" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>
+  ${borderFx.overlay}
 </svg>`;
+}
+
+// Hero border/overlay only — internal hero compositions already paint their
+// own background per layout, so the material system only touches the outer
+// frame treatment here (full material control lives in svg-components.js).
+function heroBorderFx(style, w, h, c, id) {
+  switch (style) {
+    case 'brutalist': {
+      const off = 16;
+      return {
+        offset: off,
+        defs: '',
+        shadow: `<rect x="${off}" y="${off}" width="${w}" height="${h}" fill="${c.accent}"/>`,
+        overlay: `<rect x="0" y="0" width="${w}" height="${h}" fill="none" stroke="${c.text}" stroke-width="6"/>`,
+      };
+    }
+    case 'swiss':
+      return { defs: '', overlay: `
+        <rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" fill="none" stroke="${c.accent}" stroke-opacity="0.5" stroke-width="1"/>
+        <line x1="0" y1="0" x2="14" y2="0" stroke="${c.accent}" stroke-width="2"/><line x1="0" y1="0" x2="0" y2="14" stroke="${c.accent}" stroke-width="2"/>
+        <line x1="${w - 14}" y1="${h}" x2="${w}" y2="${h}" stroke="${c.accent}" stroke-width="2"/><line x1="${w}" y1="${h - 14}" x2="${w}" y2="${h}" stroke="${c.accent}" stroke-width="2"/>` };
+    case 'editorial':
+      return { defs: '', overlay: `<line x1="0" y1="1" x2="${w}" y2="1" stroke="${c.accent}" stroke-width="2.5"/><line x1="0" y1="${h - 1}" x2="${w}" y2="${h - 1}" stroke="${c.accent}" stroke-opacity="0.3" stroke-width="1"/>` };
+    case 'cybercore': {
+      const scan = Array.from({ length: Math.floor(h / 7) }, (_, i) => `<line x1="0" y1="${i * 7}" x2="${w}" y2="${i * 7}" stroke="${c.accent2}" stroke-opacity="0.035"/>`).join('');
+      return { defs: '', overlay: `${scan}<rect x="1" y="1" width="${w - 2}" height="${h - 2}" fill="none" stroke="${c.accent2}" stroke-opacity="0.5" stroke-width="1"/>` };
+    }
+    case 'y2k':
+      return { defs: `<defs><linearGradient id="hchrome-${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${c.accent2}"/><stop offset="100%" stop-color="${c.accent}" stop-opacity="0.3"/></linearGradient></defs>`,
+        overlay: `<rect x="1.5" y="1.5" width="${w - 3}" height="${h - 3}" rx="18" fill="none" stroke="url(#hchrome-${id})" stroke-width="2.5"/>` };
+    case 'organic':
+      return { defs: '', overlay: `<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="28" fill="none" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1.5"/>` };
+    case 'aurora':
+      return { defs: '', overlay: `<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="22" fill="none" stroke="${c.accent2}" stroke-opacity="0.4" stroke-width="1.5"/>` };
+    case 'glass':
+    default:
+      return { defs: '', overlay: `<rect x="1" y="1" width="${w - 2}" height="${h - 2}" fill="none" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1.5" rx="18"/>` };
+  }
 }
 
 const font = `font-family="Georgia, 'Cinzel Decorative', serif"`;
@@ -89,21 +133,29 @@ function split(id, c, m) {
 }
 
 // ── TUESDAY · BLUE · "centered" — a compass, not a badge: service motif ──
+// ── TUESDAY · BLUE · "centered" — LIQUID GLASS: fluid waves, frosted card ─
 function centered(id, c, m) {
   const cx = W / 2, cy = 150;
-  const ticks = Array.from({ length: 24 }, (_, i) => {
-    const a = (Math.PI / 12) * i;
-    const r1 = 108, r2 = i % 6 === 0 ? 96 : 102;
-    return `<line x1="${(cx + r1 * Math.cos(a)).toFixed(1)}" y1="${(cy + r1 * Math.sin(a)).toFixed(1)}" x2="${(cx + r2 * Math.cos(a)).toFixed(1)}" y2="${(cy + r2 * Math.sin(a)).toFixed(1)}" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1"/>`;
-  }).join('');
+  const waves = [
+    `M 0,60 C 200,10 400,110 ${W * 0.5},70 C ${W * 0.75},30 ${W - 200},90 ${W},50 L ${W},0 L 0,0 Z`,
+    `M 0,${H} C 250,${H - 40} 500,${H + 10} ${W * 0.6},${H - 30} C ${W * 0.8},${H - 60} ${W - 150},${H - 10} ${W},${H - 40} L ${W},${H} Z`,
+  ];
   return frame(`
   ${baseDefs(c, id)}
+  <defs>
+    <linearGradient id="fluid1-${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${c.accent}" stop-opacity="0.30"/><stop offset="100%" stop-color="${c.accent}" stop-opacity="0"/></linearGradient>
+    <linearGradient id="fluid2-${id}" x1="1" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="${c.accent2}" stop-opacity="0.28"/><stop offset="100%" stop-color="${c.accent2}" stop-opacity="0"/></linearGradient>
+  </defs>
   <circle cx="${cx}" cy="${cy}" r="220" fill="url(#glow-${id})" filter="url(#blur-${id})"/>
-  ${ticks}
-  <circle cx="${cx}" cy="${cy}" r="95" fill="none" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1"/>
-  <polygon points="${cx},${cy - 66} ${cx + 14},${cy} ${cx},${cy + 66} ${cx - 14},${cy}" fill="none" stroke="url(#grad-${id})" stroke-width="2.5"/>
-  <circle cx="${cx}" cy="${cy}" r="50" fill="${c.bg}" fill-opacity="0.55" stroke="url(#grad-${id})" stroke-width="2.5"/>
-  <text x="${cx}" y="162" text-anchor="middle" ${font} font-size="32" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
+  <path d="${waves[0]}" fill="url(#fluid1-${id})"/>
+  <path d="${waves[1]}" fill="url(#fluid2-${id})"/>
+  <circle cx="${cx - 260}" cy="${cy + 40}" r="70" fill="${c.accent}" opacity="0.10"/>
+  <circle cx="${cx + 280}" cy="${cy - 60}" r="55" fill="${c.accent2}" opacity="0.10"/>
+  <rect x="${cx - 130}" y="${cy - 100}" width="260" height="200" rx="26" fill="#ffffff" opacity="0.05"/>
+  <rect x="${cx - 130}" y="${cy - 100}" width="260" height="200" rx="26" fill="none" stroke="${c.accent2}" stroke-opacity="0.4" stroke-width="1.5"/>
+  <path d="M ${cx - 110},${cy - 100} L ${cx - 40},${cy - 100} L ${cx - 90},${cy + 100} L ${cx - 120},${cy + 100} Z" fill="#ffffff" opacity="0.06"/>
+  <circle cx="${cx}" cy="${cy - 8}" r="50" fill="${c.bg}" fill-opacity="0.5" stroke="url(#grad-${id})" stroke-width="2.5"/>
+  <text x="${cx}" y="${cy + 4}" text-anchor="middle" ${font} font-size="32" font-weight="700" fill="${c.accent2}">${esc(initials(m.identity.name))}</text>
   <text x="${cx}" y="60" text-anchor="middle" ${font} font-size="38" font-weight="700" fill="${c.text}">${esc(m.identity.name)}</text>
   <text x="${cx}" y="88" text-anchor="middle" ${mono} font-size="15" fill="${c.accent2}" letter-spacing="3">${esc(m.roleForDay.toUpperCase())}</text>
   <text x="${cx}" y="245" text-anchor="middle" ${mono} font-size="13" fill="${c.text}" opacity="0.85" letter-spacing="1">◆ ${esc(m.themeName.toUpperCase())} · ${m.mode.toUpperCase()}</text>
@@ -270,7 +322,7 @@ function generateHero(theme, mode, identity) {
   const c = theme[mode];
   const id = `${theme.key}-${mode}`;
   const fn = LAYOUTS[theme.layout] || centered;
-  const m = { identity, mode, themeName: theme.themeName, quote: theme.quote, roleForDay: theme.roleForDay };
+  const m = { identity, mode, themeName: theme.themeName, quote: theme.quote, roleForDay: theme.roleForDay, panelStyle: theme.panelStyle, id };
   return fn(id, c, m);
 }
 

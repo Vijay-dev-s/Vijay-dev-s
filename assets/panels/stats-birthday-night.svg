@@ -1,0 +1,27 @@
+<svg width="900" height="130" viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>
+    <clipPath id="clip-p8"><rect x="0" y="0" width="900" height="130" rx="18.200000000000003"/></clipPath>
+    <linearGradient id="chrome-p8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="15%" stop-color="#0e93b8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0e93b8" stop-opacity="0.15"/>
+    </linearGradient></defs>
+  <rect x="0" y="0" width="900" height="130" rx="18.200000000000003" fill="rgba(14,147,184,0.16)"/>
+  <g clip-path="url(#clip-p8)"><defs><linearGradient id="stgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0e93b8"/><stop offset="100%" stop-color="#38bdf8"/></linearGradient></defs>
+    <text x="150" y="60" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="url(#stgrad)">6</text>
+    <text x="150" y="84" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#dff8ff" letter-spacing="1.5">PROJECTS</text>
+    <text x="150" y="102" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#dff8ff" opacity="0.55">Live in production</text>
+    <line x1="300" y1="20" x2="300" y2="110" stroke="#0e93b8" stroke-opacity="0.25"/>
+    <text x="450" y="60" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="url(#stgrad)">1yr</text>
+    <text x="450" y="84" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#dff8ff" letter-spacing="1.5">EXPERIENCE</text>
+    <text x="450" y="102" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#dff8ff" opacity="0.55">ONEPIXEL TECH</text>
+    <line x1="600" y1="20" x2="600" y2="110" stroke="#0e93b8" stroke-opacity="0.25"/>
+    <text x="750" y="60" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="url(#stgrad)">12</text>
+    <text x="750" y="84" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#dff8ff" letter-spacing="1.5">STACK</text>
+    <text x="750" y="102" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#dff8ff" opacity="0.55">Technologies</text>
+    </g>
+  
+    <rect x="1.5" y="1.5" width="897" height="127" rx="16.900000000000002" fill="none" stroke="url(#chrome-p8)" stroke-width="2.5"/>
+    <ellipse cx="252.00000000000003" cy="6" rx="198" ry="5" fill="#ffffff" opacity="0.35"/>
+    <text x="884" y="18" text-anchor="end" font-size="12" fill="#38bdf8" opacity="0.8">✦</text>
+</svg>

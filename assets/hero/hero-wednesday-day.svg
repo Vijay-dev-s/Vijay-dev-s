@@ -1,0 +1,41 @@
+<svg width="1200" height="330" viewBox="0 0 1200 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="profile hero">
+  
+  
+  <rect width="1200" height="330" fill="#04150c"/>
+  
+  <rect width="1200" height="30" fill="#04150c" fill-opacity="0.9"/>
+  <line x1="0" y1="30" x2="1200" y2="30" stroke="#1f9d55" stroke-opacity="0.3"/>
+  <circle cx="20" cy="15" r="5" fill="#ff5f56" opacity="0.85"/>
+  <circle cx="38" cy="15" r="5" fill="#ffbd2e" opacity="0.85"/>
+  <circle cx="56" cy="15" r="5" fill="#27c93f" opacity="0.85"/>
+  <text x="80" y="19" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#eefdf4" opacity="0.55">visitor@vijay-dev-s:~$ whoami · primordial green · day</text>
+  <g transform="translate(0,30)">
+  
+  
+  <defs>
+    <linearGradient id="grad-wednesday-day" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f9d55"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <radialGradient id="glow-wednesday-day" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(31,157,85,0.42)" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="rgba(31,157,85,0.42)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-wednesday-day"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect x="0" y="0" width="720" height="300" fill="rgba(31,157,85,0.08)"/>
+  <line x1="720" y1="0" x2="720" y2="300" stroke="#1f9d55" stroke-opacity="0.4"/>
+  <circle cx="0" cy="300" r="100" fill="none" stroke="#1f9d55" stroke-opacity="0.12" stroke-width="1"/><circle cx="0" cy="300" r="130" fill="none" stroke="#1f9d55" stroke-opacity="0.12" stroke-width="1"/><circle cx="0" cy="300" r="160" fill="none" stroke="#1f9d55" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="48" y="70" font-family="Georgia, 'Cinzel Decorative', serif" font-size="34" font-weight="700" fill="#eefdf4">Vijay S</text>
+  <text x="48" y="98" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#4ade80" letter-spacing="2">FULL STACK DEVELOPER</text>
+  <rect x="48" y="126" width="3" height="90" fill="url(#grad-wednesday-day)"/>
+  <text x="68" y="150" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="16" fill="#eefdf4" opacity="0.85">"Patience is the sharpest weapon in</text>
+  <text x="68" y="174" font-family="Georgia, 'Cinzel Decorative', serif" font-style="italic" font-size="16" fill="#eefdf4" opacity="0.85">existence."</text>
+  <text x="68" y="205" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#4ade80" letter-spacing="1" opacity="0.8">◆ PRIMORDIAL GREEN · DAY</text>
+  <circle cx="960" cy="150" r="230" fill="url(#glow-wednesday-day)" filter="url(#blur-wednesday-day)"/>
+  <circle cx="960" cy="150" r="80" fill="none" stroke="url(#grad-wednesday-day)" stroke-width="3"/>
+  <text x="960" y="163" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="46" font-weight="700" fill="#4ade80">VS</text>
+  
+  </g>
+  <rect x="1" y="1" width="1198" height="328" rx="28" fill="none" stroke="#1f9d55" stroke-opacity="0.35" stroke-width="1.5"/>
+</svg>

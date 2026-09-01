@@ -51,7 +51,7 @@ function main() {
 
   console.log(`[generate:${repoConfig.platform}] theme="${themeKey}" mode="${mode}" isBirthday=${resolved.isBirthday} weekday(IST)=${resolved.weekday} time(IST)=${resolved.ist.hour}:${String(resolved.ist.minute).padStart(2, '0')}`);
 
-  const c = theme[mode];
+  const c = { ...theme[mode], panelStyle: theme.panelStyle };
   const { content } = config;
 
   // ── Hero banner (theme-specific layout) ──
@@ -75,12 +75,15 @@ function main() {
   paths.techStack = write(`techstack-${themeKey}-${mode}.svg`, techStack(content.techGroups, c));
   paths.stats = write(`stats-${themeKey}-${mode}.svg`, statsPanel(content.stats, c));
   paths.currently = write(`currently-${themeKey}-${mode}.svg`, currentlyPanel(
-    [{ label: 'Building', text: content.currentlyBuilding }, { label: 'Focus', text: theme.quote.short }], c
+    [{ label: 'Building', text: content.currentlyBuilding }], c
+  ));
+  paths.coreFocus = write(`corefocus-${themeKey}-${mode}.svg`, currentlyPanel(
+    content.coreFocus, c
   ));
 
   console.log(`[generate] wrote ${Object.keys(paths).length} component groups to assets/hero + assets/panels`);
 
-  const readme = assembleReadme(theme, mode, config, paths, repoConfig.platform, repoConfig.githubWidgets);
+  const readme = assembleReadme(theme, mode, config, paths, repoConfig.platform);
   fs.writeFileSync(path.join(ROOT, 'README.md'), readme, 'utf8');
   console.log(`[generate] wrote README.md`);
 }

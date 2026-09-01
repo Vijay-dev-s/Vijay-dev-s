@@ -1,0 +1,16 @@
+<svg width="380" height="190" viewBox="0 0 380 190" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs></defs>
+  <rect x="0" y="0" width="380" height="190" fill="#0a0700"/>
+  
+  <polygon points="334,0 380,0 380,46" fill="#7a5906" fill-opacity="0.22"/>
+  <polygon points="350,0 380,0 380,30" fill="url(#pcgrad)" fill-opacity="0.55"/>
+  <circle cx="358" cy="22" r="5" fill="#eab308"/>
+  <text x="20" y="38" font-family="Georgia, 'Cinzel Decorative', serif" font-size="19" font-weight="700" fill="#f6ecc8">VeemaaGroup.com</text>
+  <rect x="20" y="48" width="36" height="2.5" fill="url(#pcgrad)"/>
+  <defs><linearGradient id="pcgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#7a5906"/><stop offset="100%" stop-color="#eab308"/></linearGradient></defs>
+  <text x="20" y="72" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#f6ecc8" opacity="0.8">Construction and infrastructure company</text><text x="20" y="90" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#f6ecc8" opacity="0.8">website — services, projects, company</text><text x="20" y="108" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#f6ecc8" opacity="0.8">information and business enquiries.</text>
+  <rect x="20" y="150" width="59.5" height="22" rx="11" fill="rgba(122,89,6,0.14)" stroke="#7a5906" stroke-opacity="0.4"/><text x="49.75" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#eab308">Laravel</text><rect x="87.5" y="150" width="33.5" height="22" rx="11" fill="rgba(122,89,6,0.14)" stroke="#7a5906" stroke-opacity="0.4"/><text x="104.25" y="165" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#eab308">PHP</text>
+  <text x="20" y="178" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#f6ecc8" opacity="0.5" letter-spacing="1">LIVE</text>
+  
+  <line x1="0" y1="1" x2="380" y2="1" stroke="#7a5906" stroke-width="2"/>
+</svg>

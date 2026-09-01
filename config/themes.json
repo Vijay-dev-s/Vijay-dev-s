@@ -12,7 +12,6 @@
       "displayName": "Vijay S",
       "url": "https://gitlab.com/coc29042004"
     },
-    "email": "vijays29042004@gmail.com",
     "linkedin": "https://linkedin.com/in/vijay--dev",
     "portfolio": "https://portfolio-vijay-dev.netlify.app"
   },
@@ -75,7 +74,9 @@
         "emotion": "Dominion & Loneliness"
       },
       "roleForDay": "Full Stack Developer",
-      "statsWidgetTheme": "radical"
+      "statsWidgetTheme": "radical",
+      "panelStyle": "brutalist",
+      "designStyle": "Neo-Brutalism"
     },
     "tuesday": {
       "key": "tuesday",
@@ -117,7 +118,9 @@
         "emotion": "Loyalty & Restraint"
       },
       "roleForDay": "Full Stack Developer",
-      "statsWidgetTheme": "tokyonight"
+      "statsWidgetTheme": "tokyonight",
+      "panelStyle": "glass",
+      "designStyle": "Liquid Glass"
     },
     "wednesday": {
       "key": "wednesday",
@@ -159,7 +162,9 @@
         "emotion": "Precision & Silence"
       },
       "roleForDay": "Full Stack Developer",
-      "statsWidgetTheme": "merko"
+      "statsWidgetTheme": "merko",
+      "panelStyle": "organic",
+      "designStyle": "Organic Tech"
     },
     "thursday": {
       "key": "thursday",
@@ -201,7 +206,9 @@
         "emotion": "Love & Wrath"
       },
       "roleForDay": "Full Stack Developer",
-      "statsWidgetTheme": "default"
+      "statsWidgetTheme": "default",
+      "panelStyle": "swiss",
+      "designStyle": "Swiss Editorial"
     },
     "friday": {
       "key": "friday",
@@ -243,7 +250,9 @@
         "emotion": "Force & Thunder"
       },
       "roleForDay": "Backend Engineer",
-      "statsWidgetTheme": "gruvbox"
+      "statsWidgetTheme": "gruvbox",
+      "panelStyle": "editorial",
+      "designStyle": "Luxury Editorial"
     },
     "saturday": {
       "key": "saturday",
@@ -285,7 +294,9 @@
         "emotion": "Chaos & Delight"
       },
       "roleForDay": "Full Stack Developer",
-      "statsWidgetTheme": "dracula"
+      "statsWidgetTheme": "dracula",
+      "panelStyle": "aurora",
+      "designStyle": "Aurora UI"
     },
     "sunday": {
       "key": "sunday",
@@ -327,7 +338,9 @@
         "emotion": "Devotion & Purpose"
       },
       "roleForDay": "Backend Developer",
-      "statsWidgetTheme": "dark"
+      "statsWidgetTheme": "dark",
+      "panelStyle": "cybercore",
+      "designStyle": "Cybercore"
     },
     "birthday": {
       "key": "birthday",
@@ -371,16 +384,18 @@
         "emotion": "Connection & Wonder"
       },
       "roleForDay": "Full Stack Developer",
-      "statsWidgetTheme": "synthwave"
+      "statsWidgetTheme": "synthwave",
+      "panelStyle": "y2k",
+      "designStyle": "Y2K Vaporwave"
     }
   },
   "content": {
-    "about": "Full stack developer working across Laravel/PHP backends and React/JS frontends, currently building production features at ONEPIXEL TECHNOLOGIES.",
+    "about": "B.E. Electronics & Communication Engineering graduate with 1 year of professional experience as a Full Stack Developer at ONEPIXEL TECHNOLOGIES, skilled in PHP (Laravel), Python, Node.js and MySQL \u2014 building secure web applications, REST APIs and full CRUD systems.",
     "currentlyBuilding": "Production features at ONEPIXEL TECHNOLOGIES",
     "stats": [
       {
         "label": "Projects",
-        "value": "3+",
+        "value": "6",
         "sub": "Live in production"
       },
       {
@@ -390,7 +405,7 @@
       },
       {
         "label": "Stack",
-        "value": "9+",
+        "value": "12",
         "sub": "Technologies"
       }
     ],
@@ -405,7 +420,8 @@
         "JavaScript",
         "React",
         "Tailwind CSS",
-        "HTML/CSS"
+        "HTML",
+        "CSS"
       ],
       "Database": [
         "MySQL"
@@ -416,40 +432,104 @@
         "Python"
       ]
     },
+    "coreFocus": [
+      {
+        "label": "Backend",
+        "text": "Laravel \u00b7 PHP \u00b7 REST APIs"
+      },
+      {
+        "label": "Web Applications",
+        "text": "Frontend \u00b7 Backend"
+      },
+      {
+        "label": "Databases",
+        "text": "MySQL \u00b7 MariaDB \u00b7 CRUD"
+      },
+      {
+        "label": "AI Integration",
+        "text": "AI APIs \u00b7 AI Applications"
+      }
+    ],
+    "education": {
+      "degree": "B.E. Electronics & Communication Engineering",
+      "institution": "Dr. G.U. Pope College of Engineering \u2014 Anna University",
+      "period": "2021 \u2013 2025",
+      "note": "CGPA 7.2"
+    },
     "experience": [
       {
         "role": "Full Stack Developer",
         "org": "ONEPIXEL TECHNOLOGIES",
-        "period": "Aug 2025 \u2013 Present",
-        "detail": "Built 5+ production pages and REST APIs; optimized 10+ legacy PHP modules."
+        "period": "Jul 2025 \u2013 Present",
+        "detail": "Laravel/PHP web applications, REST APIs, database integration, debugging, performance optimization."
       },
       {
-        "role": "B.E. Electronics & Communication",
-        "org": "Anna University",
-        "period": "2021 \u2013 2025",
-        "detail": "Undergraduate degree."
+        "role": "Software Intern",
+        "org": "ONEPIXEL TECHNOLOGIES",
+        "period": "Jan 2025 \u2013 Jun 2025",
+        "detail": "Web application development, debugging, feature implementation, frontend/backend integration."
       }
     ],
     "achievements": [],
     "projects": [
       {
         "name": "Bikkerz.com",
-        "description": "Backend development with Laravel. Product listings, user authentication modules, bug fixes and performance improvements.",
+        "description": "Marketplace/service platform \u2014 backend development, database integration, authentication and application maintenance.",
         "tags": [
           "Laravel",
           "MySQL",
           "PHP"
         ],
-        "url": "https://portfolio-vijay-dev.netlify.app/projects",
+        "url": "https://bikkerz.com",
         "status": "Live"
       },
       {
         "name": "Seithikalam.com",
-        "description": "News feed frontend with Laravel Blade serving 1000+ daily readers. Full-stack debugging and feature testing.",
+        "description": "News platform \u2014 Laravel Blade frontend development, feature implementation, frontend and backend debugging.",
         "tags": [
           "Laravel Blade",
+          "PHP"
+        ],
+        "url": "https://seithikalam.com",
+        "status": "Live"
+      },
+      {
+        "name": "VeemaaGroup.com",
+        "description": "Construction and infrastructure company website \u2014 services, projects, company information and business enquiries.",
+        "tags": [
+          "Laravel",
+          "PHP"
+        ],
+        "url": "https://veemaagroup.com",
+        "status": "Live"
+      },
+      {
+        "name": "NayakkarMatrimony.com",
+        "description": "Matrimonial platform focused on profile discovery and community-based matchmaking.",
+        "tags": [
+          "Laravel",
+          "MySQL"
+        ],
+        "url": "https://nayakkarmatrimony.com",
+        "status": "Live"
+      },
+      {
+        "name": "ONEPIXELDigitalMedia.com",
+        "description": "Tamil digital media platform \u2014 categorized news, political coverage, election updates, dynamic article publishing.",
+        "tags": [
+          "Laravel",
           "PHP",
-          "REST API"
+          "CMS"
+        ],
+        "url": "https://onepixeldigitalmedia.com",
+        "status": "Live"
+      },
+      {
+        "name": "Thottianaicker",
+        "description": "Tamil community and news platform covering social, cultural, educational, spiritual and historical content.",
+        "tags": [
+          "Laravel",
+          "PHP"
         ],
         "url": "https://portfolio-vijay-dev.netlify.app/projects",
         "status": "Live"

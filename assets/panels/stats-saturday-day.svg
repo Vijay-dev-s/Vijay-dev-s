@@ -1,7 +1,14 @@
 <svg width="900" height="130" viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg" role="img">
-  <rect width="900" height="130" rx="12" fill="#120a1a"/>
-  <defs><linearGradient id="stgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8b3fd6"/><stop offset="100%" stop-color="#c86bff"/></linearGradient></defs>
-    <text x="150" y="60" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="url(#stgrad)">3+</text>
+  <defs>
+    <clipPath id="clip-p8"><rect x="0" y="0" width="900" height="130" rx="22"/></clipPath>
+    <linearGradient id="aur1-p8" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8b3fd6" stop-opacity="0.35"/><stop offset="100%" stop-color="#8b3fd6" stop-opacity="0"/></linearGradient>
+    <linearGradient id="aur2-p8" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c86bff" stop-opacity="0.3"/><stop offset="100%" stop-color="#c86bff" stop-opacity="0"/></linearGradient></defs>
+  
+    <rect x="0" y="0" width="900" height="130" rx="22" fill="rgba(139,63,214,0.09)"/>
+    <path d="M 0,26 Q 270,-13 540,19.5 T 900,6.5 L 900,0 L 0,0 Z" fill="url(#aur1-p8)"/>
+    <path d="M 0,130 Q 360,149.5 630,110.5 T 900,130 Z" fill="url(#aur2-p8)"/>
+  <g clip-path="url(#clip-p8)"><defs><linearGradient id="stgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8b3fd6"/><stop offset="100%" stop-color="#c86bff"/></linearGradient></defs>
+    <text x="150" y="60" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="url(#stgrad)">6</text>
     <text x="150" y="84" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#f6edff" letter-spacing="1.5">PROJECTS</text>
     <text x="150" y="102" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#f6edff" opacity="0.55">Live in production</text>
     <line x1="300" y1="20" x2="300" y2="110" stroke="#8b3fd6" stroke-opacity="0.25"/>
@@ -9,9 +16,9 @@
     <text x="450" y="84" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#f6edff" letter-spacing="1.5">EXPERIENCE</text>
     <text x="450" y="102" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#f6edff" opacity="0.55">ONEPIXEL TECH</text>
     <line x1="600" y1="20" x2="600" y2="110" stroke="#8b3fd6" stroke-opacity="0.25"/>
-    <text x="750" y="60" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="url(#stgrad)">9+</text>
+    <text x="750" y="60" text-anchor="middle" font-family="Georgia, 'Cinzel Decorative', serif" font-size="40" font-weight="700" fill="url(#stgrad)">12</text>
     <text x="750" y="84" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#f6edff" letter-spacing="1.5">STACK</text>
     <text x="750" y="102" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#f6edff" opacity="0.55">Technologies</text>
-    
-  <rect x="1" y="1" width="898" height="128" rx="11" fill="none" stroke="#8b3fd6" stroke-opacity="0.35" stroke-width="1.5"/>
+    </g>
+  <rect x="1" y="1" width="898" height="128" rx="21" fill="none" stroke="#c86bff" stroke-opacity="0.35" stroke-width="1"/>
 </svg>

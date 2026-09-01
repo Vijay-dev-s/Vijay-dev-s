@@ -25,7 +25,7 @@ const rows = [];
 for (const key of Object.keys(config.themes)) {
   const theme = config.themes[key];
   for (const mode of ['day', 'night']) {
-    const c = theme[mode];
+    const c = { ...theme[mode], panelStyle: theme.panelStyle };
     const dir = path.join(previewRoot, `${key}-${mode}`);
     fs.mkdirSync(path.join(dir, 'assets', 'hero'), { recursive: true });
     fs.mkdirSync(path.join(dir, 'assets', 'panels'), { recursive: true });
@@ -40,10 +40,11 @@ for (const key of Object.keys(config.themes)) {
     paths.techStack = write('panels', `techstack.svg`, techStack(config.content.techGroups, c));
     paths.stats = write('panels', `stats.svg`, statsPanel(config.content.stats, c));
     paths.currently = write('panels', `currently.svg`, currentlyPanel(
-      [{ label: 'Building', text: config.content.currentlyBuilding }, { label: 'Focus', text: theme.quote.short }], c
+      [{ label: 'Building', text: config.content.currentlyBuilding }], c
     ));
+    paths.coreFocus = write('panels', `corefocus.svg`, currentlyPanel(config.content.coreFocus, c));
 
-    const readme = assembleReadme(theme, mode, config, paths, 'preview', true);
+    const readme = assembleReadme(theme, mode, config, paths, 'preview');
     fs.writeFileSync(path.join(dir, 'README.md'), readme, 'utf8');
 
     rows.push({ key, mode, themeName: theme.themeName, layout: theme.layout, dir: `assets/previews/${key}-${mode}` });

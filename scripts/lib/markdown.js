@@ -39,7 +39,6 @@ function linksRow(identity, c) {
     `[![GitHub](${shield('GitHub', gh.username, c.accent, 'github')})](${gh.url})`,
     `[![GitLab](${shield('GitLab', gl.username, c.accent, 'gitlab')})](${gl.url})`,
     `[![LinkedIn](${shield('LinkedIn', 'connect', c.accent, 'linkedin')})](${identity.linkedin})`,
-    `[![Email](${shield('Email', 'contact', c.accent, 'gmail')})](mailto:${identity.email})`,
     ``,
     `</div>`,
   ].join('\n');
@@ -67,26 +66,15 @@ function projectLinksList(projects) {
   return projects.map(p => `**[${p.name} ↗](${p.url})**`).join('  ·  ');
 }
 
-// Real, hosted, GitHub-API-backed widgets — never hand-fabricated numbers.
-// Only included on the GitHub README (GitLab has no equivalent public
-// service). The `theme` query param is one of vercel's fixed presets, so
-// it's the closest available match to our custom palette, not a perfect
-// hex match — an inherent limit of using a real third-party data source
-// instead of drawing fake stats ourselves.
-function githubWidgets(identity, statsTheme) {
-  const u = identity.github.username;
-  return [
-    `<div align="center">`,
-    ``,
-    `<img src="https://github-readme-stats.vercel.app/api?username=${u}&show_icons=true&theme=${statsTheme}&hide_border=true&count_private=true" width="49%" alt="GitHub stats"/>`,
-    `<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=${u}&layout=compact&theme=${statsTheme}&hide_border=true" width="38%" alt="Top languages"/>`,
-    ``,
-    `<img src="https://github-readme-streak-stats.herokuapp.com/?user=${u}&theme=${statsTheme}&hide_border=true" width="90%" alt="Streak stats"/>`,
-    ``,
-    `<img src="https://github-profile-trophy.vercel.app/?username=${u}&theme=${statsTheme}&no-frame=true&row=1&column=6" width="90%" alt="Trophies"/>`,
-    ``,
-    `</div>`,
-  ].join('\n');
+// Chunks project-card images into rows of `perRow` so 6 real projects don't
+// get crammed into one impossibly-narrow row — used by every composer that
+// shows more than 2-3 cards.
+function projectGrid(cardPaths, perRow = 3) {
+  const rows = [];
+  for (let i = 0; i < cardPaths.length; i += perRow) rows.push(cardPaths.slice(i, i + perRow));
+  return `<table width="100%">` + rows.map(row =>
+    `<tr>` + row.map(p => `<td width="${Math.floor(100 / row.length)}%">${img(p, '100%')}</td>`).join('') + `</tr>`
+  ).join('') + `</table>`;
 }
 
 const DIVIDER = `<br/>\n`;
@@ -99,35 +87,38 @@ function split(ctx) {
     img(paths.hero, '100%'), DIVIDER,
     `<table width="100%"><tr>`,
     `<td width="55%" valign="top">\n\n#### ◆ About\n\n${config.content.about}\n\n</td>`,
-    `<td width="45%" valign="top">\n\n#### ◆ Current Focus\n\n${theme.quote.short}\n\n</td>`,
+    `<td width="45%" valign="top">${img(paths.coreFocus, '100%')}</td>`,
     `</tr></table>`, DIVIDER,
     `#### ◆ Projects\n`,
     img(paths.featured, '100%'), DIVIDER,
-    `<table width="100%"><tr>` +
-      paths.projects.map(p => `<td width="${Math.floor(100 / paths.projects.length)}%">${img(p, '100%')}</td>`).join('') +
-    `</tr></table>`, DIVIDER,
+    projectGrid(paths.projects, 3), DIVIDER,
     `#### ◆ Experience\n`, img(paths.timeline, '100%'), DIVIDER,
     `<table width="100%"><tr><td width="60%">${img(paths.techStack, '100%')}</td><td width="40%">${img(paths.stats, '100%')}</td></tr></table>`,
-    DIVIDER, (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
-// ── TUESDAY · BLUE — calm, centered, one strong focal project ─────────────
+// ── TUESDAY · BLUE — LIQUID GLASS: atmospheric → hero → metrics → panels → featured → timeline → quote → footer
 function centered(ctx) {
   const { theme, mode, config, paths } = ctx;
   const c = theme[mode];
   return [
+    // Atmospheric background lives inside the hero SVG itself (fluid glow layers);
+    // everything below is glass-material panels, but each panel earns its place —
+    // not every line of text gets boxed in glass.
     `<div align="center">`, img(paths.hero, '100%'), `</div>`, DIVIDER,
-    `<div align="center">\n\n${quoteBlock(theme)}\n\n</div>`, DIVIDER,
+    `<div align="center">${img(paths.stats, '92%')}</div>`, DIVIDER,
+    `<table width="100%"><tr>`,
+    `<td width="50%" valign="top">${img(paths.currently, '100%')}</td>`,
+    `<td width="50%" valign="top">${img(paths.coreFocus, '100%')}</td>`,
+    `</tr></table>`, DIVIDER,
     `<div align="center">\n\n#### ◆ Featured Work\n\n</div>`,
     `<div align="center">${img(paths.featured, '90%')}</div>`, DIVIDER,
-    `<table width="100%"><tr>`,
-    `<td width="50%" valign="top">\n\n#### About\n\n${config.content.about}\n\n</td>`,
-    `<td width="50%" valign="top">\n\n#### Other Work\n\n${projectLinksList(config.content.projects.slice(1))}\n\n</td>`,
-    `</tr></table>`, DIVIDER,
     `<div align="center">${img(paths.timeline, '100%')}</div>`, DIVIDER,
-    `<div align="center">${img(paths.techStack, '100%')}</div>`,
-    DIVIDER, (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    `<div align="center">\n\n${quoteBlock(theme)}\n\n</div>`, DIVIDER,
+    `<div align="center">${img(paths.techStack, '95%')}</div>`, DIVIDER,
+    `<sub>${projectLinksList(config.content.projects.slice(1))}</sub>`,
+    DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
@@ -139,15 +130,13 @@ function showcase(ctx) {
   return [
     img(paths.hero, '100%'), DIVIDER,
     `#### ◆ Project Showcase\n`,
-    `<table width="100%"><tr>` +
-      allProjects.map(p => `<td width="${Math.floor(100 / allProjects.length)}%">${img(p, '100%')}</td>`).join('') +
-    `</tr></table>`, DIVIDER,
+    projectGrid(allProjects, 3), DIVIDER,
     `#### ◆ Technical Stack\n`, img(paths.techStack, '100%'), DIVIDER,
     `<table width="100%"><tr>`,
     `<td width="65%" valign="top">\n\n<sub>${config.content.about}</sub>\n\n</td>`,
     `<td width="35%" valign="top">${img(paths.stats, '100%')}</td>`,
     `</tr></table>`,
-    DIVIDER, (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
@@ -165,7 +154,7 @@ function editorial(ctx) {
     img(paths.techStack, '100%'), ``,
     img(paths.stats, '70%'), ``,
     `---`, ``,
-    (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
@@ -180,11 +169,9 @@ function asymmetric(ctx) {
     `<td width="32%" valign="top">${img(paths.stats, '100%')}</td>`,
     `</tr></table>`, DIVIDER,
     `#### ◆ Experience\n`, img(paths.timeline, '100%'), DIVIDER,
-    `<table width="100%"><tr>` +
-      paths.projects.map(p => `<td width="${Math.floor(100 / Math.max(paths.projects.length, 1))}%">${img(p, '100%')}</td>`).join('') +
-    `</tr></table>`, DIVIDER,
+    projectGrid(paths.projects, 3), DIVIDER,
     img(paths.techStack, '100%'),
-    DIVIDER, (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
@@ -194,13 +181,14 @@ function dashboard(ctx) {
   const c = theme[mode];
   return [
     img(paths.hero, '100%'), DIVIDER,
-    img(paths.currently, '100%'), DIVIDER,
+    img(paths.currently, '100%'), img(paths.coreFocus, '100%'), DIVIDER,
     `<table width="100%">`,
     `<tr><td width="50%" valign="top">${img(paths.stats, '100%')}</td><td width="50%" valign="top">${img(paths.featured, '100%')}</td></tr>`,
-    `<tr><td width="50%" valign="top">${img(paths.techStack, '100%')}</td><td width="50%" valign="top">${paths.projects.map(p => img(p, '100%')).join('<br/>')}</td></tr>`,
     `</table>`, DIVIDER,
+    `#### ◆ Projects\n`, projectGrid(paths.projects, 3), DIVIDER,
+    img(paths.techStack, '100%'), DIVIDER,
     img(paths.timeline, '100%'),
-    DIVIDER, (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
@@ -210,12 +198,12 @@ function stealth(ctx) {
   const c = theme[mode];
   return [
     img(paths.hero, '100%'), ``,
-    img(paths.currently, '100%'), ``,
+    img(paths.currently, '100%'), img(paths.coreFocus, '100%'), ``,
     img(paths.featured, '100%'), ``,
     `<sub>${projectLinksList(config.content.projects.slice(1))}</sub>`, ``,
     img(paths.techStack, '100%'), ``,
     img(paths.stats, '100%'), ``,
-    (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
@@ -226,11 +214,11 @@ function celebration(ctx) {
   return [
     `<div align="center">`, img(paths.hero, '100%'), `</div>`, DIVIDER,
     `<div align="center">\n\n${quoteBlock(theme)}\n\n</div>`, DIVIDER,
-    `<div align="center">${img(paths.currently, '85%')}</div>`, DIVIDER,
+    `<div align="center">${img(paths.currently, '85%')}</div>`, `<div align="center">${img(paths.coreFocus, '85%')}</div>`, DIVIDER,
     `<div align="center">${img(paths.featured, '85%')}</div>`, DIVIDER,
     `<div align="center">${img(paths.stats, '85%')}</div>`, DIVIDER,
     `<div align="center">${img(paths.techStack, '85%')}</div>`,
-    DIVIDER, (ctx.githubWidgets ? githubWidgets(config.identity, theme.statsWidgetTheme) + '\n' + DIVIDER : ''), linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
+    DIVIDER, linksRow(config.identity, c), footer(theme, mode, config.identity, ctx.platform),
   ].join('\n');
 }
 
@@ -242,11 +230,10 @@ const COMPOSERS = { split, centered, showcase, editorial, asymmetric, dashboard,
  * @param {object} config  full themes.json
  * @param {object} paths   { hero, featured, projects: [...], timeline, techStack, stats, currently }
  * @param {string} platform
- * @param {boolean} includeGithubWidgets  true only for the GitHub deployment
  */
-function assembleReadme(theme, mode, config, paths, platform, includeGithubWidgets) {
+function assembleReadme(theme, mode, config, paths, platform) {
   const composer = COMPOSERS[theme.layout] || centered;
-  return composer({ theme, mode, config, paths, platform, githubWidgets: !!includeGithubWidgets });
+  return composer({ theme, mode, config, paths, platform });
 }
 
 module.exports = { assembleReadme, shield };

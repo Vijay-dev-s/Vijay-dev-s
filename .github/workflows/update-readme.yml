@@ -1,8 +1,19 @@
 name: Update profile README (theme rotation)
 
 # This workflow lives INSIDE the Vijay-dev-s repo, which is itself the
-# generator's ROOT — scripts/generate.js writes README.md and assets/hero/
-# straight to this repo's root. There is no nested folder here.
+# generator's ROOT — scripts/generate.js writes README.md and assets/
+# (both assets/hero/ and assets/panels/) straight to this repo's root.
+# There is no nested folder here.
+#
+# IMPORTANT: `git add assets/` (not `assets/hero/*.svg`) — README.md
+# references files in BOTH assets/hero/ and assets/panels/. Narrowing
+# this back to hero-only was the exact bug that caused broken/missing
+# images on the live profile. If you ever add a new asset subfolder,
+# this stays correct without changes since it adds the whole tree.
+#
+# validate.js runs before the commit step and exits non-zero if anything
+# referenced by README.md is missing/invalid — that fails this job and
+# blocks the commit, rather than silently pushing a broken README.
 on:
   schedule:
     - cron: '*/30 * * * *'
@@ -31,11 +42,14 @@ jobs:
       - name: Generate current-theme README
         run: node scripts/generate.js
 
+      - name: Validate generated output
+        run: node scripts/validate.js
+
       - name: Commit and push if changed
         run: |
           git config user.name "theme-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add README.md assets/hero/*.svg
+          git add README.md assets/
           if git diff --cached --quiet; then
             echo "No visual change — nothing to commit."
           else

@@ -2,9 +2,15 @@
 /**
  * Reusable visual components shared across all 8 theme layouts.
  * Each theme's assembler (markdown.js) picks which of these to use,
- * in what size, and in what arrangement — the components themselves
- * stay theme-agnostic and are recolored via the `c` palette object.
+ * in what size, and in what arrangement. The actual SURFACE MATERIAL
+ * (flat hard-shadow / frosted glass / organic blob / Swiss rule / bare
+ * editorial / aurora glow / cybercore terminal / Y2K chrome) comes from
+ * `c.panelStyle` via materials.js — every component below defers its
+ * background/border to that, so the same theme automatically gets a
+ * consistent surface language everywhere, not just color.
  */
+
+const { panelMaterial } = require('./materials');
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -12,12 +18,19 @@ function esc(s) {
 
 const font = `font-family="Georgia, 'Cinzel Decorative', serif"`;
 const mono = `font-family="'JetBrains Mono', ui-monospace, monospace"`;
+let uidCounter = 0;
 
 function svgWrap(w, h, inner, c) {
-  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" role="img">
-  <rect width="${w}" height="${h}" rx="12" fill="${c.bg}"/>
-  ${inner}
-  <rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="11" fill="none" stroke="${c.accent}" stroke-opacity="0.35" stroke-width="1.5"/>
+  const id = `p${uidCounter++}`;
+  const style = c.panelStyle || 'glass';
+  const m = panelMaterial(style, w, h, c, id);
+  const clipOpen = m.clipId ? `<g clip-path="url(#${m.clipId})">` : '';
+  const clipClose = m.clipId ? `</g>` : '';
+  return `<svg width="${m.canvasW}" height="${m.canvasH}" viewBox="0 0 ${m.canvasW} ${m.canvasH}" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs>${m.defs}</defs>
+  ${m.bg}
+  ${clipOpen}${inner}${clipClose}
+  ${m.fg}
 </svg>`;
 }
 

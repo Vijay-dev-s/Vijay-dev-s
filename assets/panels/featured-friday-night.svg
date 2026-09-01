@@ -1,0 +1,14 @@
+<svg width="780" height="220" viewBox="0 0 780 220" xmlns="http://www.w3.org/2000/svg" role="img">
+  <defs></defs>
+  <rect x="0" y="0" width="780" height="220" fill="#0a0700"/>
+  
+  <text x="30" y="30" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#eab308" letter-spacing="2">FEATURED PROJECT</text>
+  <text x="30" y="66" font-family="Georgia, 'Cinzel Decorative', serif" font-size="34" font-weight="700" fill="#f6ecc8">Bikkerz.com</text>
+  <rect x="30" y="82" width="60" height="3" fill="#7a5906"/>
+  <text x="30" y="112" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#f6ecc8" opacity="0.82">Marketplace/service platform — backend development, database</text><text x="30" y="134" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#f6ecc8" opacity="0.82">integration, authentication and application maintenance.</text>
+  <text x="30" y="194" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" fill="#eab308" letter-spacing="1">LARAVEL   ·   MYSQL   ·   PHP</text>
+  <circle cx="740" cy="40" r="6" fill="#eab308"/>
+  <text x="726" y="44" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#f6ecc8" opacity="0.6" letter-spacing="1">LIVE</text>
+  
+  <line x1="0" y1="1" x2="780" y2="1" stroke="#7a5906" stroke-width="2"/>
+</svg>
